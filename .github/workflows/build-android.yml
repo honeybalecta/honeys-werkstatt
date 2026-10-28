@@ -1,0 +1,104 @@
+name: Android-App bauen
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["android/**", "version.txt", "tools/**", ".github/workflows/build-android.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-android
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      HW_VERSION_CODE: ${{ github.run_number }}
+      INTER_VERSION: "4.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version
+        run: echo "HW_VERSION=$(cat version.txt | tr -d '[:space:]')" >> "$GITHUB_ENV"
+
+      - name: Signaturpasswort prüfen
+        env:
+          KS_PW: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -z "$KS_PW" ]; then
+            echo "::error::Secret ANDROID_KEYSTORE_PASSWORD fehlt (Settings › Secrets and variables › Actions)."
+            exit 1
+          fi
+          echo "HW_KEYSTORE_PASSWORD=$KS_PW" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.14.3"
+
+      - name: Schrift (Inter) und Katalog einbauen
+        run: |
+          A=android/app/src/main/assets
+          mkdir -p "$A/fonts"
+          cp katalog.json "$A/katalog.json"
+          if curl -L --fail --retry 3 -o "$RUNNER_TEMP/inter.zip" \
+               "https://github.com/rsms/inter/releases/download/v$INTER_VERSION/Inter-$INTER_VERSION.zip"; then
+            mkdir -p "$RUNNER_TEMP/inter" && unzip -q -o "$RUNNER_TEMP/inter.zip" -d "$RUNNER_TEMP/inter"
+            for s in Regular Medium SemiBold Bold; do
+              f=$(find "$RUNNER_TEMP/inter" -type f -name "Inter-$s.ttf" | head -1)
+              [ -n "$f" ] && cp "$f" "$A/fonts/Inter-$s.ttf" || echo "::warning::Inter-$s.ttf nicht gefunden"
+            done
+          else
+            echo "::warning::Inter ließ sich nicht laden – die App nutzt dann die Systemschrift."
+          fi
+          ls -la "$A" "$A/fonts"
+
+      - name: APK bauen
+        run: |
+          set -o pipefail
+          gradle -p android --no-daemon --console=plain assembleRelease 2>&1 | tee build.log
+          SIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
+          echo "----- Signatur -----" | tee -a build.log
+          "$SIGNER" verify --print-certs android/app/build/outputs/apk/release/*.apk 2>&1 | grep -E "DN|SHA-256" | tee -a build.log
+
+      - name: Build-Log im Zweig ci-log-android ablegen
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash tools/ci_log.sh android "${{ job.status }}" build.log
+
+      - name: APK bereitstellen
+        run: |
+          mkdir -p out
+          cp android/app/build/outputs/apk/release/*.apk "out/HoneysWerkstatt-$HW_VERSION.apk"
+          ls -la out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HoneysWerkstatt
+          path: out/*.apk
+          compression-level: 0
+
+      - name: Als Release veröffentlichen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v$HW_VERSION"
+          for i in 1 2 3 4; do
+            if gh release view "$TAG" >/dev/null 2>&1; then
+              gh release upload "$TAG" out/*.apk --clobber && break
+            else
+              gh release create "$TAG" out/*.apk --title "Honeys Werkstatt $HW_VERSION" \
+                --notes "Android 10 und neuer. Einmal von hier installieren – danach aktualisiert sich die Werkstatt selbst." && break
+            fi
+            sleep 15
+          done

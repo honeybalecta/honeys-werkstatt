@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drei Waben: die obere Zelle rot (die App, die gerade dran ist), zwei cremefarbene darunter -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#E5402A" android:pathData="M54.00,24.27 L66.12,31.27 L66.12,45.27 L54.00,52.27 L41.88,45.27 L41.88,31.27 Z" />
+    <path android:fillColor="#EDE7DA" android:pathData="M40.38,47.87 L52.50,54.87 L52.50,68.87 L40.38,75.87 L28.25,68.87 L28.25,54.87 Z" />
+    <path android:fillColor="#EDE7DA" android:pathData="M67.62,47.87 L79.75,54.87 L79.75,68.87 L67.62,75.87 L55.50,68.87 L55.50,54.87 Z" />
+</vector>

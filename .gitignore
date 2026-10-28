@@ -1,0 +1,10 @@
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/app/src/main/assets/katalog.json
+android/app/src/main/assets/fonts/
+*.iml
+.idea/
+build.log
+out/

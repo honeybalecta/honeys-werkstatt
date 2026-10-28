@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "hinweis": "Welche Apps Honeys Werkstatt zeigt. Neue Einträge nur nach Rückfrage bei Raphael.",
+  "apps": [
+    {
+      "id": "souffleur",
+      "name": "Souffleur",
+      "typ": "apk",
+      "repo": "honeybalecta/souffleur",
+      "paket": "de.honeybalecta.souffleur",
+      "datei": "^Souffleur-.*\\.apk$",
+      "beschreibung": "Teleprompter, der mitliest und von selbst weiterschaltet"
+    },
+    {
+      "id": "honeycut",
+      "name": "HoneyCut",
+      "typ": "apk",
+      "repo": "honeybalecta/textschnitt",
+      "paket": "de.honeybalecta.textschnitt",
+      "datei": "^HoneyCut-Android-.*\\.apk$",
+      "beschreibung": "Gesprochene Videos über das Transkript schneiden"
+    },
+    {
+      "id": "vorlesepult",
+      "name": "Vorlesepult",
+      "typ": "apk",
+      "repo": "honeybalecta/Vorlesepult",
+      "paket": "de.honeybalecta.vorlesepult",
+      "fassungen": [
+        { "id": "komplett", "name": "Komplett – alle Stimmen", "datei": "^Vorlesepult-komplett-.*\\.apk$" },
+        { "id": "kompakt", "name": "Kompakt – vier Stimmen", "datei": "^Vorlesepult-kompakt-.*\\.apk$" }
+      ],
+      "beschreibung": "Texte, PDFs und Word-Dateien mit natürlichen Stimmen vorlesen"
+    },
+    {
+      "id": "karussell",
+      "name": "Karussell-Werkstatt",
+      "typ": "web",
+      "repo": "honeybalecta/Karusell-Werkstatt",
+      "dateien": ["index.html"],
+      "start": "index.html",
+      "beschreibung": "Instagram-Karussells als durchgehende Strecke gestalten"
+    },
+    {
+      "id": "werkstatt",
+      "name": "Honeys Werkstatt",
+      "typ": "apk",
+      "repo": "honeybalecta/honeys-werkstatt",
+      "paket": "de.honeybalecta.werkstatt",
+      "datei": "^HoneysWerkstatt-.*\\.apk$",
+      "beschreibung": "Diese App: alle eigenen Apps an einem Ort"
+    }
+  ]
+}
