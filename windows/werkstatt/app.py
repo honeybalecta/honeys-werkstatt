@@ -71,8 +71,15 @@ class Werkstatt:
         self.tray = None
         self.web_fenster: dict = {}
         self.api = Api(self)
+        breite, hoehe = 1000, 780
+        try:  # auf kleinen Bildschirmen nicht unter die Taskleiste ragen
+            s = webview.screens[0]
+            breite = max(680, min(breite, int(s.width) - 40))
+            hoehe = max(560, min(hoehe, int(s.height) - 90))
+        except Exception:  # noqa: BLE001
+            pass
         self.fenster = webview.create_window(
-            TITEL, f"{server.basis}/ui/index.html", js_api=self.api, width=1000, height=780, min_size=(660, 540),
+            TITEL, f"{server.basis}/ui/index.html", js_api=self.api, width=breite, height=hoehe, min_size=(660, 540),
             hidden=versteckt, background_color="#131312", text_select=False)
         self.fenster.events.closing += self._schliesst
         self.fenster.events.shown += lambda: self._sichtbar(True)
