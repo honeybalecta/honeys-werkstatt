@@ -123,17 +123,22 @@ jobs:
           compression-level: 0
 
       - name: Als Release veröffentlichen
-        shell: pwsh
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $tag = "windows-v$env:HW_VERSION"
-          $file = (Get-ChildItem dist\HoneysWerkstatt-Setup-*.exe | Select-Object -First 1).FullName
-          $notes = "Für Windows 10 und 11. Einmal installieren – danach aktualisiert sich die Werkstatt selbst. Beim ersten Start fragt Windows eventuell nach („Windows hat Ihren PC geschützt“): Weitere Informationen › Trotzdem ausführen."
-          for ($i = 1; $i -le 4; $i++) {
-            gh release view $tag 2>$null | Out-Null
-            if ($LASTEXITCODE -eq 0) { gh release upload $tag $file --clobber }
-            else { gh release create $tag $file --title "Honeys Werkstatt für Windows $env:HW_VERSION" --notes $notes --latest=false }
-            if ($LASTEXITCODE -eq 0) { break }
-            Start-Sleep -Seconds 15
-          }
+          TAG="windows-v$HW_VERSION"
+          FILE=$(ls dist/HoneysWerkstatt-Setup-*.exe | head -1)
+          NOTES="Für Windows 10 und 11. Einmal installieren – danach aktualisiert sich die Werkstatt selbst. Beim ersten Start fragt Windows eventuell nach („Windows hat Ihren PC geschützt“): Weitere Informationen › Trotzdem ausführen."
+          : > gh-fehler.txt
+          for i in 1 2 3 4; do
+            if gh release view "$TAG" >/dev/null 2>&1; then
+              gh release upload "$TAG" "$FILE" --clobber 2>gh-fehler.txt && break
+            else
+              gh release create "$TAG" "$FILE" --title "Honeys Werkstatt für Windows $HW_VERSION" --notes "$NOTES" --latest=false 2>gh-fehler.txt && break
+            fi
+            echo "::warning::Release-Versuch $i: $(tr '\n' ' ' < gh-fehler.txt)"
+            sleep 15
+          done
+          gh release view "$TAG" >/dev/null 2>&1 || { echo "::error::Release $TAG fehlt: $(tr '\n' ' ' < gh-fehler.txt)"; exit 1; }
+          gh release view "$TAG" --json assets --jq '.assets[].name'
