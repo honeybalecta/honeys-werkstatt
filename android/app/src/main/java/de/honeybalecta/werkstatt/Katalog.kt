@@ -41,6 +41,8 @@ data class Katalog(val eintraege: List<Eintrag>) {
             val liste = ArrayList<Eintrag>()
             for (i in 0 until apps.length()) {
                 val a = apps.optJSONObject(i) ?: continue
+                // Reine Windows-Apps (ohne Paketnamen) gehören nicht auf das Handy
+                if (a.optString("typ") != "web" && a.optString("paket").isBlank()) continue
                 runCatching { liste += eintrag(a) }
             }
             return Katalog(liste)

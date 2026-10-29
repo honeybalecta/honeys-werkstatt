@@ -1,0 +1,139 @@
+name: Windows-Programm bauen
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["windows/**", "katalog.json", ".github/workflows/build-windows.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-windows
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 75
+    env:
+      PYTHONUTF8: "1"
+      INTER_VERSION: "4.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version
+        shell: pwsh
+        run: |
+          $v = (Get-Content windows/version.txt -Raw).Trim()
+          "HW_VERSION=$v" >> $env:GITHUB_ENV
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhängigkeiten und Schrift (Inter)
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r windows/requirements.txt pyinstaller
+          New-Item -ItemType Directory -Force build, ci, windows/ui/fonts | Out-Null
+          Set-Content -Path build/app-version.txt -Value $env:HW_VERSION -NoNewline
+          Invoke-WebRequest "https://github.com/rsms/inter/releases/download/v$env:INTER_VERSION/Inter-$env:INTER_VERSION.zip" -OutFile "$env:RUNNER_TEMP\inter.zip"
+          Expand-Archive "$env:RUNNER_TEMP\inter.zip" -DestinationPath "$env:RUNNER_TEMP\inter" -Force
+          foreach ($s in "Regular", "Medium", "SemiBold", "Bold") {
+            $f = Get-ChildItem "$env:RUNNER_TEMP\inter" -Recurse -Filter "Inter-$s.ttf" | Select-Object -First 1
+            if (-not $f) { throw "Inter-$s.ttf fehlt im Archiv" }
+            Copy-Item $f.FullName "windows/ui/fonts/Inter-$s.ttf"
+          }
+          Get-ChildItem windows/ui/fonts | Format-Table Name, Length
+
+      - name: Tests (Kern und Server)
+        shell: bash
+        run: |
+          python -m unittest discover -s windows/tests -v 2>&1 | tee tests.log
+          exit ${PIPESTATUS[0]}
+
+      - name: Programm bauen (PyInstaller)
+        shell: pwsh
+        run: |
+          pyinstaller --noconfirm --clean windows/werkstatt.spec 2>&1 | Tee-Object -FilePath build.log
+          if (-not (Test-Path dist\HoneysWerkstatt\HoneysWerkstatt.exe)) { throw "PyInstaller hat keine EXE erzeugt" }
+
+      - name: Selbsttest (lädt und installiert Souffleur wirklich)
+        shell: pwsh
+        env:
+          WERKSTATT_TEST_TOKEN: ${{ github.token }}
+        run: |
+          $p = Start-Process dist\HoneysWerkstatt\HoneysWerkstatt.exe -ArgumentList "--selbsttest", "$pwd\ci\selbsttest.json" -PassThru
+          $null = $p.Handle
+          if (-not $p.WaitForExit(1800000)) { $p.Kill(); throw "Selbsttest hängt" }
+          Get-Content ci\selbsttest.json -ErrorAction SilentlyContinue | Tee-Object -FilePath ci\selbsttest.log
+          Get-Content "$env:LOCALAPPDATA\HoneysWerkstatt\werkstatt.log" -ErrorAction SilentlyContinue | Out-File ci\selbsttest-protokoll.log
+          if ($p.ExitCode -ne 0) { throw "Selbsttest fehlgeschlagen (Code $($p.ExitCode))" }
+
+      - name: Installer bauen (Inno Setup)
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "C:\Program Files (x86)\Inno Setup 6\ISCC.exe")) { choco install innosetup -y --no-progress }
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" windows\installer.iss | Tee-Object -FilePath ci\iscc.log
+          if ($LASTEXITCODE -ne 0) { throw "Inno Setup fehlgeschlagen" }
+          Get-ChildItem dist\*.exe | Format-Table Name, Length
+
+      - name: Installieren, Fenster öffnen, fotografieren
+        id: fenster
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          $log = "ci\fenster.log"
+          $setup = (Get-ChildItem dist\HoneysWerkstatt-Setup-*.exe | Select-Object -First 1).FullName
+          $p = Start-Process $setup -ArgumentList "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/LOG=$pwd\ci\installation.log" -PassThru
+          $null = $p.Handle; $p.WaitForExit()
+          "Installer: Code $($p.ExitCode)" | Tee-Object -FilePath $log -Append
+          $exe = "$env:LOCALAPPDATA\Programs\Honeys Werkstatt\HoneysWerkstatt.exe"
+          if (-not (Test-Path $exe)) { throw "Werkstatt nicht installiert" }
+          Get-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{EDD2D7CA-10E7-4F92-8F62-B5F948950037}_is1" |
+            Select-Object DisplayName, DisplayVersion, InstallLocation | Format-List | Out-String | Tee-Object -FilePath $log -Append
+          Start-Sleep -Seconds 35   # die Werkstatt startet nach der Installation von selbst
+          Get-Process HoneysWerkstatt -ErrorAction SilentlyContinue | Format-Table Id, MainWindowTitle | Out-String | Tee-Object -FilePath $log -Append
+          & windows\tools\bildschirmfoto.ps1 "$pwd\ci\1-werkstatt.png" | Tee-Object -FilePath $log -Append
+          Start-Process $exe -ArgumentList "--web", "karussell"   # zweite Instanz gibt den Befehl weiter
+          Start-Sleep -Seconds 25
+          & windows\tools\bildschirmfoto.ps1 "$pwd\ci\2-karussell.png" | Tee-Object -FilePath $log -Append
+          Start-Process $exe -ArgumentList "--beenden"
+          Start-Sleep -Seconds 10
+          $rest = @(Get-Process HoneysWerkstatt -ErrorAction SilentlyContinue)
+          "Nach --beenden noch laufend: $($rest.Count)" | Tee-Object -FilePath $log -Append
+          reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v HoneysWerkstatt 2>&1 | Tee-Object -FilePath $log -Append
+          Get-Content "$env:LOCALAPPDATA\HoneysWerkstatt\werkstatt.log" -ErrorAction SilentlyContinue | Out-File ci\werkstatt.log
+          if ($rest.Count -gt 0) { throw "Werkstatt hat sich nicht beendet" }
+
+      - name: Bericht im Zweig ci-log-windows ablegen
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash tools/ci_log.sh windows "${{ job.status }} fenster=${{ steps.fenster.outcome }}" tests.log build.log ci/*
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HoneysWerkstatt-Windows
+          path: dist/HoneysWerkstatt-Setup-*.exe
+          compression-level: 0
+
+      - name: Als Release veröffentlichen
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "windows-v$env:HW_VERSION"
+          $file = (Get-ChildItem dist\HoneysWerkstatt-Setup-*.exe | Select-Object -First 1).FullName
+          $notes = "Für Windows 10 und 11. Einmal installieren – danach aktualisiert sich die Werkstatt selbst. Beim ersten Start fragt Windows eventuell nach („Windows hat Ihren PC geschützt“): Weitere Informationen › Trotzdem ausführen."
+          for ($i = 1; $i -le 4; $i++) {
+            gh release view $tag 2>$null | Out-Null
+            if ($LASTEXITCODE -eq 0) { gh release upload $tag $file --clobber }
+            else { gh release create $tag $file --title "Honeys Werkstatt für Windows $env:HW_VERSION" --notes $notes --latest=false }
+            if ($LASTEXITCODE -eq 0) { break }
+            Start-Sleep -Seconds 15
+          }

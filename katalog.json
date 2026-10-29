@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "hinweis": "Welche Apps Honeys Werkstatt zeigt. Neue Einträge nur nach Rückfrage bei Raphael.",
+  "version": 2,
+  "hinweis": "Welche Apps Honeys Werkstatt zeigt (Android und Windows). Neue Einträge nur nach Rückfrage bei Raphael. Android nutzt paket/datei/fassungen, Windows den Block windows; typ web gilt für beide.",
   "apps": [
     {
       "id": "souffleur",
@@ -9,7 +9,12 @@
       "repo": "honeybalecta/souffleur",
       "paket": "de.honeybalecta.souffleur",
       "datei": "^Souffleur-.*\\.apk$",
-      "beschreibung": "Teleprompter, der mitliest und von selbst weiterschaltet"
+      "beschreibung": "Teleprompter, der mitliest und von selbst weiterschaltet",
+      "windows": {
+        "datei": "^Souffleur-Setup-.*\\.exe$",
+        "appid": "{3F1B7C2E-8A44-4C6E-9D21-5B0E7A9C4F18}",
+        "exe": "Souffleur.exe"
+      }
     },
     {
       "id": "honeycut",
@@ -18,7 +23,12 @@
       "repo": "honeybalecta/textschnitt",
       "paket": "de.honeybalecta.textschnitt",
       "datei": "^HoneyCut-Android-.*\\.apk$",
-      "beschreibung": "Gesprochene Videos über das Transkript schneiden"
+      "beschreibung": "Gesprochene Videos über das Transkript schneiden",
+      "windows": {
+        "datei": "^HoneyCut-Setup-.*\\.exe$",
+        "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
+        "exe": "HoneyCut.exe"
+      }
     },
     {
       "id": "vorlesepult",
@@ -27,8 +37,16 @@
       "repo": "honeybalecta/Vorlesepult",
       "paket": "de.honeybalecta.vorlesepult",
       "fassungen": [
-        { "id": "komplett", "name": "Komplett – alle Stimmen", "datei": "^Vorlesepult-komplett-.*\\.apk$" },
-        { "id": "kompakt", "name": "Kompakt – vier Stimmen", "datei": "^Vorlesepult-kompakt-.*\\.apk$" }
+        {
+          "id": "komplett",
+          "name": "Komplett – alle Stimmen",
+          "datei": "^Vorlesepult-komplett-.*\\.apk$"
+        },
+        {
+          "id": "kompakt",
+          "name": "Kompakt – vier Stimmen",
+          "datei": "^Vorlesepult-kompakt-.*\\.apk$"
+        }
       ],
       "beschreibung": "Texte, PDFs und Word-Dateien mit natürlichen Stimmen vorlesen"
     },
@@ -37,7 +55,9 @@
       "name": "Karussell-Werkstatt",
       "typ": "web",
       "repo": "honeybalecta/Karusell-Werkstatt",
-      "dateien": ["index.html"],
+      "dateien": [
+        "index.html"
+      ],
       "start": "index.html",
       "beschreibung": "Instagram-Karussells als durchgehende Strecke gestalten"
     },
@@ -48,7 +68,12 @@
       "repo": "honeybalecta/honeys-werkstatt",
       "paket": "de.honeybalecta.werkstatt",
       "datei": "^HoneysWerkstatt-.*\\.apk$",
-      "beschreibung": "Diese App: alle eigenen Apps an einem Ort"
+      "beschreibung": "Diese App: alle eigenen Apps an einem Ort",
+      "windows": {
+        "datei": "^HoneysWerkstatt-Setup-.*\\.exe$",
+        "appid": "{EDD2D7CA-10E7-4F92-8F62-B5F948950037}",
+        "exe": "HoneysWerkstatt.exe"
+      }
     }
   ]
 }

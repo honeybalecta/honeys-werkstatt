@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honeys Werkstatt</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main id="liste" class="seite" aria-labelledby="titel">
+  <header class="kopf">
+    <svg class="marke" viewBox="26 22 56 56" aria-hidden="true">
+      <path class="m-oben" d="M54.00,24.27 L66.12,31.27 L66.12,45.27 L54.00,52.27 L41.88,45.27 L41.88,31.27 Z"/>
+      <path class="m-unten" d="M40.38,47.87 L52.50,54.87 L52.50,68.87 L40.38,75.87 L28.25,68.87 L28.25,54.87 Z"/>
+      <path class="m-unten" d="M67.62,47.87 L79.75,54.87 L79.75,68.87 L67.62,75.87 L55.50,68.87 L55.50,54.87 Z"/>
+    </svg>
+    <div class="kopf-text">
+      <h1 id="titel">Honeys Werkstatt</h1>
+      <p id="untertitel" class="leise">Katalog wird geladen …</p>
+    </div>
+    <button class="symbol-knopf" id="k-pruefen" title="Nach Updates suchen" aria-label="Nach Updates suchen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg>
+    </button>
+    <button class="symbol-knopf" id="k-einstellungen" title="Einstellungen" aria-label="Einstellungen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+    </button>
+  </header>
+  <div id="hinweise"></div>
+  <button id="alle" class="knopf haupt breit" hidden></button>
+  <div id="apps" class="apps" aria-live="polite"></div>
+  <p class="fuss leise">Die Liste kommt aus dem Repo honeybalecta/honeys-werkstatt. Neue Apps erscheinen hier von selbst, sobald sie im Katalog stehen.</p>
+</main>
+
+<main id="einstellungen" class="seite" hidden aria-labelledby="titel-e">
+  <header class="kopf">
+    <button class="symbol-knopf" id="k-zurueck" title="Zurück" aria-label="Zurück">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="kopf-text"><h1 id="titel-e">Einstellungen</h1></div>
+  </header>
+
+  <section class="karte abschnitt">
+    <h2>GitHub-Zugang</h2>
+    <p class="leise" id="token-text"></p>
+    <label class="feld">
+      <span id="token-label">Token (beginnt mit github_pat_)</span>
+      <input id="token" type="password" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="reihe">
+      <button class="knopf haupt" id="token-speichern" disabled>Speichern und prüfen</button>
+      <button class="knopf text" id="token-entfernen" hidden>Entfernen</button>
+    </div>
+    <p id="token-status" class="klein" role="status"></p>
+    <hr>
+    <h3>So legst du ihn an</h3>
+    <ol class="klein leise schritte">
+      <li>Auf GitHub einen „Fine-grained token“ anlegen (Knopf unten). Du kannst auch denselben Token wie auf dem Handy nehmen.</li>
+      <li>Repository access: „All repositories“ – dann klappen auch künftige private Apps.</li>
+      <li>Permissions › Repository › Contents: „Read-only“. Mehr braucht es nicht.</li>
+      <li>Token kopieren und hier einfügen. Er liegt danach in der Windows-Anmeldeinformationsverwaltung.</li>
+    </ol>
+    <button class="knopf text" id="token-anlegen">Token auf GitHub anlegen</button>
+  </section>
+
+  <section class="karte abschnitt">
+    <h2>Updates</h2>
+    <label class="schalter"><span><b>Mit Windows starten</b><span class="klein leise">Die Werkstatt startet unsichtbar im Infobereich neben der Uhr.</span></span>
+      <input type="checkbox" id="s-autostart"><i aria-hidden="true"></i></label>
+    <label class="schalter"><span><b>Im Infobereich weiterlaufen</b><span class="klein leise">Beim Schließen des Fensters läuft die Werkstatt weiter und sucht etwa alle sechs Stunden nach Updates.</span></span>
+      <input type="checkbox" id="s-hintergrund"><i aria-hidden="true"></i></label>
+    <label class="schalter"><span><b>Updates automatisch installieren</b><span class="klein leise">Ohne Rückfrage, solange das Programm gerade nicht geöffnet ist. Geöffnete Programme kommen beim nächsten Durchgang dran.</span></span>
+      <input type="checkbox" id="s-auto"><i aria-hidden="true"></i></label>
+  </section>
+
+  <section class="karte abschnitt">
+    <h2>Speicherorte</h2>
+    <p class="klein leise">Exporte aus Web-Werkzeugen landen in Downloads › Honeys Werkstatt.</p>
+    <div class="reihe">
+      <button class="knopf" id="o-ablage">Exportordner öffnen</button>
+      <button class="knopf text" id="o-daten">Datenordner</button>
+      <button class="knopf text" id="o-protokoll">Protokoll</button>
+    </div>
+  </section>
+
+  <section class="karte abschnitt">
+    <h2>Über</h2>
+    <p class="klein" id="ueber"></p>
+    <p class="klein leise">Katalog: honeybalecta/honeys-werkstatt › katalog.json</p>
+  </section>
+</main>
+
+<div id="meldung" class="meldung" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

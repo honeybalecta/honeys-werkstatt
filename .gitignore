@@ -8,3 +8,10 @@ android/app/src/main/assets/fonts/
 .idea/
 build.log
 out/
+windows/ui/fonts/
+build/
+dist/
+ci/
+__pycache__/
+*.pyc
+tests.log
