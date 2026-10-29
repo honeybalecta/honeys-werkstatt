@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "schritte": {
+    "paket": {
+      "ok": true,
+      "ergebnis": "vollständig",
+      "sekunden": 0.0
+    },
+    "katalog": {
+      "ok": true,
+      "ergebnis": [
+        "souffleur",
+        "honeycut",
+        "karussell",
+        "werkstatt"
+      ],
+      "sekunden": 0.0
+    },
+    "tresor": {
+      "ok": true,
+      "ergebnis": "schreiben, lesen, löschen",
+      "sekunden": 0.0
+    },
+    "server": {
+      "ok": true,
+      "ergebnis": [
+        "Slide 01 (2).png",
+        "Slide 01.png"
+      ],
+      "sekunden": 0.7
+    },
+    "github": {
+      "ok": true,
+      "ergebnis": {
+        "souffleur": {
+          "neu": "1.0.0",
+          "installiert": null,
+          "fehler": null
+        },
+        "honeycut": {
+          "neu": null,
+          "installiert": null,
+          "fehler": {
+            "meldung": "Repo honeybalecta/textschnitt nicht erreichbar",
+            "hinweis": "Bei privaten Repos braucht die Werkstatt einen Lesetoken mit Zugriff auf dieses Repo (Einstellungen)."
+          }
+        },
+        "karussell": {
+          "neu": null,
+          "installiert": null,
+          "fehler": null
+        },
+        "werkstatt": {
+          "neu": "1.0.0",
+          "installiert": null,
+          "fehler": null
+        }
+      },
+      "sekunden": 0.8
+    },
+    "installation": {
+      "ok": true,
+      "ergebnis": {
+        "vorher": null,
+        "jetzt": "1.0.0",
+        "ordner": "C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Souffleur"
+      },
+      "sekunden": 9.0
+    },
+    "update_bei_geoeffnetem_programm": {
+      "ok": true,
+      "ergebnis": {
+        "art": "fertig",
+        "text": "Aktualisiert"
+      },
+      "sekunden": 15.6
+    },
+    "symbol": {
+      "ok": true,
+      "ergebnis": [
+        96,
+        96
+      ],
+      "sekunden": 0.0
+    },
+    "web_werkzeug": {
+      "ok": true,
+      "ergebnis": 83754,
+      "sekunden": 0.7
+    },
+    "verknuepfung": {
+      "ok": true,
+      "ergebnis": {
+        "downloads": "C:\\Users\\runneradmin\\Downloads",
+        "programme": "C:\\Users\\runneradmin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs"
+      },
+      "sekunden": 2.5
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,289 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.1
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Program Files (x86)\Inno Setup 6\ISPPBuiltins.iss
+Parsing [Setup] section, line 8
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 30
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\German.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 30
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\German.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 33
+Parsing [Icons] section, line 43
+Parsing [Icons] section, line 44
+Parsing [Registry] section, line 48
+Parsing [InstallDelete] section, line 40
+Parsing [Run] section, line 52
+Parsing [UninstallRun] section, line 55
+Parsing [Files] section, line 36
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\HoneysWerkstatt.exe
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-console-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-datetime-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-debug-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-fibers-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-fibers-l1-1-1.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-file-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-file-l1-2-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-file-l2-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-handle-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-heap-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-localization-l1-2-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-memory-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-profile-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-string-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-synch-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-synch-l1-2-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-timezone-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-core-util-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-conio-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-convert-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-environment-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-heap-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-locale-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-math-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-process-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-string-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-time-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\api-ms-win-crt-utility-l1-1-0.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\app-version.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\base_library.zip
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\katalog.json
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\libcrypto-3.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\libffi-8.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\libssl-3.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pyexpat.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\python312.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\select.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ucrtbase.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\unicodedata.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\VCRUNTIME140.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\VCRUNTIME140_1.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\werkstatt.ico
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_asyncio.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_bz2.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_cffi_backend.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_ctypes.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_decimal.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_elementtree.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_hashlib.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_lzma.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_multiprocessing.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_overlapped.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_queue.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_socket.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_ssl.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_uuid.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\_wmi.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\hostfxr.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\mono.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\netfx.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\py.typed
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\types.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\hostfxr.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\mono.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\netfx.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.pdb
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\ffi\dlls\x86\ClrLoader.pdb
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\clr_error.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\coreclr_errors.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\find.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\hostfxr_errors.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\runtime_spec.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader\util\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\INSTALLER
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\METADATA
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\RECORD
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\top_level.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\WHEEL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\clr_loader-0.3.1.dist-info\licenses\LICENSE
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_avif.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_imaging.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_imagingcms.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_imagingft.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_imagingtk.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\PIL\_webp.cp312-win_amd64.pyd
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_appindicator.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_base.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_darwin.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_dummy.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_gtk.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_info.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_win32.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_xorg.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_util\gtk.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_util\notify_dbus.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_util\win32.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray\_util\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\COPYING
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\COPYING.LGPL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\INSTALLER
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\METADATA
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\RECORD
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\REQUESTED
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\top_level.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\WHEEL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pystray-0.19.5.dist-info\zip-safe
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\runtime\Python.Runtime.deps.json
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\runtime\Python.Runtime.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\runtime\Python.Runtime.xml
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\_pyinstaller\hook-clr.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet\_pyinstaller\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\entry_points.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\INSTALLER
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\METADATA
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\RECORD
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\top_level.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\WHEEL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\licenses\AUTHORS.md
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pythonnet-3.2.1.dist-info\licenses\LICENSE
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\entry_points.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\INSTALLER
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\METADATA
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\RECORD
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\REQUESTED
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\top_level.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\WHEEL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\pywebview-6.2.1.dist-info\licenses\LICENSE
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\INSTALLER
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\METADATA
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\RECORD
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\REQUESTED
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\top_level.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\WHEEL
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\licenses\LICENSE
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\app.css
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\app.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\bruecke.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\index.html
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\fonts\Inter-Bold.ttf
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\fonts\Inter-Medium.ttf
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\fonts\Inter-Regular.ttf
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\ui\fonts\Inter-SemiBold.ttf
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\errors.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\event.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\guilib.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\http.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\localization.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\menu.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\models.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\py.typed
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\screen.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\state.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\util.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\window.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\_version.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\classlist.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\dom.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\element.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\event.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\propsdict.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\dom\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\api.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\customize.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\finish.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\state.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\lib\dom_json.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\js\lib\polyfill.js
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\pywebview-android.jar
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\WebBrowserInterop.x64.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\WebBrowserInterop.x86.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\cef.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\cocoa.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\edgechromium.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\gtk.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\mshtml.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\qt.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\win32.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\winforms.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\app.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\base.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\event.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\app.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\content.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\net.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\os.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\view.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\webkit.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jclass\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jinterface\pywebview.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jinterface\view.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jinterface\webkit.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\platforms\android\jinterface\__init__.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\__pyinstaller\hook-webview.py
+   Compressing: D:\a\honeys-werkstatt\honeys-werkstatt\windows\..\dist\HoneysWerkstatt\_internal\webview\__pyinstaller\__init__.py
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (6.656 sec). Resulting Setup program filename is:
+D:\a\honeys-werkstatt\honeys-werkstatt\dist\HoneysWerkstatt-Setup-1.0.0.exe

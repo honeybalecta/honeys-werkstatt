@@ -1,0 +1,27 @@
+test_schutz (test_bruecke.Bruecke.test_schutz) ... skipped 'Playwright fehlt'
+test_speichern_in_chromium (test_bruecke.Bruecke.test_speichern_in_chromium) ... skipped 'Playwright fehlt'
+test_abbrechen_bei_geoeffnet (test_dienst.Ablauf.test_abbrechen_bei_geoeffnet) ... ok
+test_geoeffnet_schliessen (test_dienst.Ablauf.test_geoeffnet_schliessen) ... ok
+test_haengt_erzwingen (test_dienst.Ablauf.test_haengt_erzwingen) ... ok
+test_hintergrund_still_aber_nicht_bei_geoeffnetem_programm (test_dienst.Ablauf.test_hintergrund_still_aber_nicht_bei_geoeffnetem_programm) ... souffleur: Souffleur ist geöffnet (Das Update wird eingespielt, sobald das Programm geschlossen ist.)
+ok
+test_installer_fehler (test_dienst.Ablauf.test_installer_fehler) ... souffleur: Ein Programm hält noch Dateien offen (Läuft das Programm noch oder blockiert ein Virenschutz die Datei? Das Protokoll liegt im Datenordner der Werkstatt.)
+ok
+test_selbst_update (test_dienst.Ablauf.test_selbst_update) ... ok
+test_update_erkannt_und_installiert (test_dienst.Ablauf.test_update_erkannt_und_installiert) ... ok
+test_entwuerfe_und_vorabversionen_zaehlen_nicht (test_kern.Freigaben.test_entwuerfe_und_vorabversionen_zaehlen_nicht) ... ok
+test_honeycut_gemischte_releases (test_kern.Freigaben.test_honeycut_gemischte_releases) ... ok
+test_keine_passende_datei (test_kern.Freigaben.test_keine_passende_datei) ... ok
+test_souffleur_beide_dateien_in_einem_release (test_kern.Freigaben.test_souffleur_beide_dateien_in_einem_release) ... ok
+test_echter_katalog (test_kern.Katalog.test_echter_katalog) ... ok
+test_kaputte_eintraege_werden_uebersprungen (test_kern.Katalog.test_kaputte_eintraege_werden_uebersprungen) ... ok
+test_gleiche_version_neu_hochgeladen (test_kern.Update.test_gleiche_version_neu_hochgeladen) ... ok
+test_nachweis_entscheidet (test_kern.Update.test_nachweis_entscheidet) ... ok
+test_neuere_version (test_kern.Update.test_neuere_version) ... ok
+test_nicht_installiert (test_kern.Update.test_nicht_installiert) ... ok
+test_vergleich (test_kern.Versionen.test_vergleich) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 5.041s
+
+OK (skipped=2)

@@ -1,0 +1,20 @@
+Installer: Code 0
+
+DisplayName     : Honeys Werkstatt
+DisplayVersion  : 1.0.0
+InstallLocation : C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\
+
+
+
+  Id MainWindowTitle
+  -- ---------------
+3772 Honeys Werkstatt
+
+
+Foto: D:\a\honeys-werkstatt\honeys-werkstatt\ci\1-werkstatt.png (1024 x 768)
+Foto: D:\a\honeys-werkstatt\honeys-werkstatt\ci\2-karussell.png (1024 x 768)
+Nach --beenden noch laufend: 0
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+    HoneysWerkstatt    REG_SZ    "C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\HoneysWerkstatt.exe" --hintergrund
+
