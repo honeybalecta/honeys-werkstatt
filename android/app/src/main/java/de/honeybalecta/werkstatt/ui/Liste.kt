@@ -466,7 +466,7 @@ private fun Menue(ctx: Context, z: AppZustand, schliessen: () -> Unit, fassungWe
     if (e.typ == Typ.APK) {
         if (z.installiert != null && !e.istSelbst) punkte += punkt("Öffnen") { Werkstatt.oeffnen(ctx, z) }
         if (e.fassungen.size > 1) punkte += punkt("Fassung wählen") { fassungWechseln() }
-        if (z.installiert != null && z.freigabe != null) punkte += punkt("Neueste Fassung neu installieren") { Werkstatt.starte(listOf(e.id)) }
+        if (z.installiert != null && z.freigabe != null) punkte += punkt("Neueste Fassung neu installieren") { Werkstatt.starte(listOf(e.id), erzwingen = true) }
         if (z.installiert != null && !e.istSelbst) punkte += punkt("Deinstallieren") { Werkstatt.deinstallieren(ctx, e.paket!!) }
     } else {
         if (z.webBereit) punkte += punkt("Öffnen") { WebActivity.oeffne(ctx, e.id) }

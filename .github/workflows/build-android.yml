@@ -65,7 +65,7 @@ jobs:
       - name: APK bauen
         run: |
           set -o pipefail
-          gradle -p android --no-daemon --console=plain assembleRelease 2>&1 | tee build.log
+          gradle -p android --no-daemon --console=plain testReleaseUnitTest assembleRelease 2>&1 | tee build.log
           SIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
           echo "----- Signatur -----" | tee -a build.log
           "$SIGNER" verify --print-certs android/app/build/outputs/apk/release/*.apk 2>&1 | grep -E "DN|SHA-256" | tee -a build.log

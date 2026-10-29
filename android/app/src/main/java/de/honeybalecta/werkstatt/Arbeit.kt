@@ -14,7 +14,10 @@ import java.util.concurrent.TimeUnit
 
 /** Arbeitet die Warteschlange ab: laden, prüfen, installieren – eins nach dem anderen. */
 class InstallArbeit(context: Context, params: WorkerParameters) : CoroutineWorker(context, params) {
-    companion object { const val IDS = "ids" }
+    companion object {
+        const val IDS = "ids"
+        const val ERZWINGEN = "erzwingen"
+    }
 
     private fun info(text: String, prozent: Int) = ForegroundInfo(
         Hinweise.ID_FORTSCHRITT,
@@ -27,11 +30,12 @@ class InstallArbeit(context: Context, params: WorkerParameters) : CoroutineWorke
     override suspend fun doWork(): Result {
         Werkstatt.init(applicationContext)
         val ids = inputData.getStringArray(IDS) ?: return Result.success()
+        val erzwingen = inputData.getBoolean(ERZWINGEN, false)
         // Im Vordergrund als Dienst laufen, damit große Downloads auch beim Wechsel in andere Apps weiterlaufen
         val alsDienst = Werkstatt.vordergrund && runCatching { setForeground(info("Bereite vor …", -1)) }.isSuccess
         var zuletzt = 0L
         for (id in ids) {
-            Werkstatt.bearbeite(id, unbeaufsichtigt = !Werkstatt.vordergrund) { name, prozent ->
+            Werkstatt.bearbeite(id, unbeaufsichtigt = !Werkstatt.vordergrund, erzwingen = erzwingen) { name, prozent ->
                 val jetzt = System.currentTimeMillis()
                 if (alsDienst && jetzt - zuletzt > 800) {
                     zuletzt = jetzt

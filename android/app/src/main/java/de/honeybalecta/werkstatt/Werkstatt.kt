@@ -14,6 +14,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -202,13 +203,16 @@ object Werkstatt {
         scope.launch { pruefen() }
     }
 
-    /** Legt Installationen/Updates in die Warteschlange (nacheinander, auch wenn die App geschlossen wird). */
-    fun starte(ids: List<String>) {
+    /**
+     * Legt Installationen/Updates in die Warteschlange (nacheinander, auch wenn die App geschlossen wird).
+     * [erzwingen]: auch dann installieren, wenn genau dieser Build schon drauf ist („neu installieren“).
+     */
+    fun starte(ids: List<String>, erzwingen: Boolean = false) {
         if (ids.isEmpty()) return
         val reihe = ids.sortedBy { if (eintrag(it)?.istSelbst == true) 1 else 0 }  // sich selbst zuletzt
         reihe.forEach { abgebrochen.remove(it); setzeVorgang(it, Vorgang.Wartet) }
         val auftrag = OneTimeWorkRequestBuilder<InstallArbeit>()
-            .setInputData(workDataOf(InstallArbeit.IDS to reihe.toTypedArray()))
+            .setInputData(workDataOf(InstallArbeit.IDS to reihe.toTypedArray(), InstallArbeit.ERZWINGEN to erzwingen))
             .build()
         WorkManager.getInstance(app).enqueueUniqueWork("installieren", ExistingWorkPolicy.APPEND_OR_REPLACE, auftrag)
     }
@@ -222,7 +226,7 @@ object Werkstatt {
     fun istAbgebrochen(id: String) = id in abgebrochen
 
     /** Holt eine App oder ein Web-Werkzeug und spielt es ein. Läuft im Hintergrund-Auftrag. */
-    suspend fun bearbeite(id: String, unbeaufsichtigt: Boolean, fortschritt: (String, Int) -> Unit = { _, _ -> }) {
+    suspend fun bearbeite(id: String, unbeaufsichtigt: Boolean, erzwingen: Boolean = false, fortschritt: (String, Int) -> Unit = { _, _ -> }) {
         val e = eintrag(id) ?: return
         if (istAbgebrochen(id)) { setzeVorgang(id, null); return }
         try {
@@ -235,7 +239,7 @@ object Werkstatt {
                     setzeVorgang(id, Vorgang.Fertig("Aktuell"))
                     lokal()
                 }
-                Typ.APK -> installiereApk(e, unbeaufsichtigt, fortschritt)
+                Typ.APK -> installiereApk(e, unbeaufsichtigt, erzwingen, fortschritt)
             }
         } catch (x: Abgebrochen) {
             setzeVorgang(id, null)
@@ -247,7 +251,7 @@ object Werkstatt {
         }
     }
 
-    private suspend fun installiereApk(e: Eintrag, unbeaufsichtigt: Boolean, fortschritt: (String, Int) -> Unit) {
+    private suspend fun installiereApk(e: Eintrag, unbeaufsichtigt: Boolean, erzwingen: Boolean, fortschritt: (String, Int) -> Unit) {
         val paket = e.paket ?: throw WerkstattFehler("Im Katalog fehlt der Paketname")
         if (!app.packageManager.canRequestPackageInstalls())
             throw WerkstattFehler("Installieren ist noch nicht erlaubt", "Erlaube Honeys Werkstatt in den Einstellungen, Apps zu installieren.")
@@ -258,6 +262,14 @@ object Werkstatt {
             ?: GitHub.neuesteFreigabe(e.repo, e.musterFuer(fassung) ?: throw WerkstattFehler("Im Katalog fehlt das Dateimuster"), token)
                 ?.also { freigaben[schluessel(e, fassung)] = it }
             ?: throw WerkstattFehler("Keine APK im Release gefunden")
+
+        // Genau diese Datei ist schon installiert (z. B. weil Android den Auftrag nach einem Neustart wiederholt)
+        if (Entscheidung.schonInstalliert(speicher.nachweis(paket), inst, frei, fassung, installierteFassung(e, inst), erzwingen)) {
+            speicher.vergissAusstehend(paket)
+            setzeVorgang(e.id, Vorgang.Fertig("Aktuell"))
+            lokal()
+            return
+        }
 
         val datei = File(app.cacheDir, "apk/${e.id}.apk")
         setzeVorgang(e.id, Vorgang.Laedt(0, frei.datei.groesse))
@@ -284,12 +296,37 @@ object Werkstatt {
             throw WerkstattFehler("Die Datei ist älter als die installierte Version",
                 "Android erlaubt kein Zurückstufen. Wer die ältere Fassung will, deinstalliert die App vorher.")
         }
+        // Derselbe Build ist schon drauf: nur den Nachweis ablegen, nicht noch einmal installieren
+        if (Entscheidung.gleicherBuild(neu, jetzt, fassung, installierteFassung(e, jetzt), erzwingen)) {
+            datei.delete()
+            jetzt?.let { speicher.setzeNachweis(paket, Speicher.Nachweis(frei.datei.id, frei.datei.aktualisiert, it.versionCode, it.zeit, fassung)) }
+            speicher.vergissAusstehend(paket)
+            setzeVorgang(e.id, Vorgang.Fertig("Aktuell"))
+            lokal()
+            return
+        }
 
         speicher.merkeAusstehend(paket, Speicher.Nachweis(frei.datei.id, frei.datei.aktualisiert, neu, System.currentTimeMillis(), fassung))
         if (istAbgebrochen(e.id)) { datei.delete(); throw Abgebrochen() }
         setzeVorgang(e.id, Vorgang.Einspielen)
         fortschritt(e.name, -1)
-        if (e.istSelbst) Hinweise.selbstUpdate(app)
+        if (e.istSelbst) {
+            // Beim Selbst-Update beendet Android die App. Liefe die Installation noch im Hintergrund-Auftrag,
+            // gälte dieser als abgebrochen und Android startete ihn nach dem Neustart wieder – eine Endlosschleife.
+            // Deshalb erst den Auftrag sauber beenden, dann installieren.
+            Hinweise.selbstUpdate(app)
+            scope.launch {
+                delay(2_500)
+                try {
+                    Installer.installiere(app, datei, e, unbeaufsichtigt)
+                } catch (x: WerkstattFehler) {
+                    Hinweise.selbstUpdateWeg(app)
+                    speicher.vergissAusstehend(paket)
+                    setzeVorgang(e.id, Vorgang.Fehler(x.message ?: "Update fehlgeschlagen", x.hinweis))
+                }
+            }
+            return
+        }
         Installer.installiere(app, datei, e, unbeaufsichtigt)
     }
 
