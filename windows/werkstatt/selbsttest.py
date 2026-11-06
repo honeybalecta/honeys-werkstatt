@@ -50,7 +50,8 @@ def ausfuehren(ausgabe: Path, wurzel: Path, ui: Path, appid: str, version: str) 
     # 2. Katalog
     def katalog():
         ids = [e.id for e in kern.lies_katalog((wurzel / "katalog.json").read_text(encoding="utf-8"))]
-        assert ids == ["souffleur", "honeycut", "karussell", "werkstatt"], ids
+        # Pflicht-Einträge; weitere Apps im Katalog brechen den Test nicht (Vorlesepult gibt es nur für Android)
+        assert {"souffleur", "honeycut", "honeydeck", "karussell", "werkstatt"} <= set(ids) and "vorlesepult" not in ids, ids
         return ids
     schritt("katalog", katalog)
 
