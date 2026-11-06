@@ -31,6 +31,20 @@
       }
     },
     {
+      "id": "honeydeck",
+      "name": "HoneyDeck",
+      "typ": "apk",
+      "repo": "honeybalecta/honeydeck",
+      "paket": "de.honeybalecta.honeydeck",
+      "datei": "^HoneyDeck-Android-.*\\.apk$",
+      "beschreibung": "Folien für B-Roll und Präsentationen – läuft auch in HoneyCut",
+      "windows": {
+        "datei": "^HoneyDeck-Setup-.*\\.exe$",
+        "appid": "{B3F1C5E2-7A4D-4C2B-9E61-5D8A2F0C7B34}",
+        "exe": "HoneyDeck.exe"
+      }
+    },
+    {
       "id": "vorlesepult",
       "name": "Vorlesepult",
       "typ": "apk",
