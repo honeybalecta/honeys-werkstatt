@@ -21,7 +21,7 @@ class Katalog(unittest.TestCase):
     def test_echter_katalog(self):
         text = (HIER.parent.parent / "katalog.json").read_text(encoding="utf-8")
         ids = [e.id for e in kern.lies_katalog(text)]
-        self.assertEqual(ids, ["souffleur", "honeycut", "karussell", "werkstatt"])  # ohne Vorlesepult
+        self.assertEqual(ids, ["souffleur", "honeycut", "honeydeck", "karussell", "werkstatt"])  # ohne Vorlesepult
         e = {x.id: x for x in kern.lies_katalog(text)}
         self.assertTrue(e["honeycut"].muster.search("HoneyCut-Setup-2.9.0.exe"))
         self.assertFalse(e["honeycut"].muster.search("HoneyCut-Android-2.9.0.apk"))
