@@ -45,6 +45,20 @@
       }
     },
     {
+      "id": "honeythumb",
+      "name": "HoneyThumb",
+      "typ": "apk",
+      "repo": "honeybalecta/honeythumb",
+      "paket": "de.honeybalecta.honeythumb",
+      "datei": "^HoneyThumb-Android-.*\\.apk$",
+      "beschreibung": "Titelbilder für Videos – Person freistellen, Hintergrund tauschen, Text setzen",
+      "windows": {
+        "datei": "^HoneyThumb-Setup-.*\\.exe$",
+        "appid": "{3B7AC09F-2736-43AA-AEC4-0533D500840A}",
+        "exe": "HoneyThumb.exe"
+      }
+    },
+    {
       "id": "vorlesepult",
       "name": "Vorlesepult",
       "typ": "apk",
