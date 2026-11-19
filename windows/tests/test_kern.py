@@ -21,13 +21,18 @@ class Katalog(unittest.TestCase):
     def test_echter_katalog(self):
         text = (HIER.parent.parent / "katalog.json").read_text(encoding="utf-8")
         ids = [e.id for e in kern.lies_katalog(text)]
-        self.assertEqual(ids, ["souffleur", "honeycut", "honeydeck", "honeythumb", "karussell", "werkstatt"])  # ohne Vorlesepult
+        self.assertEqual(ids, ["souffleur", "honeycut", "honeyrec", "honeydeck", "honeythumb", "karussell", "werkstatt"])  # ohne Vorlesepult
         e = {x.id: x for x in kern.lies_katalog(text)}
         self.assertTrue(e["honeycut"].muster.search("HoneyCut-Setup-2.9.0.exe"))
         self.assertFalse(e["honeycut"].muster.search("HoneyCut-Android-2.9.0.apk"))
         self.assertEqual(e["karussell"].typ, "web")
         self.assertEqual(e["karussell"].dateien, ["index.html"])
         self.assertTrue(e["werkstatt"].appid.startswith("{"))
+        # HoneyRec steckt im Installer von HoneyCut: gleiche AppId, eigene Programmdatei, nicht getrennt deinstallierbar
+        self.assertEqual(e["honeyrec"].appid, e["honeycut"].appid)
+        self.assertEqual(e["honeyrec"].exe, "HoneyRec.exe")
+        self.assertEqual(e["honeyrec"].teil_von, "honeycut")
+        self.assertIsNone(e["honeycut"].teil_von)
 
     def test_kaputte_eintraege_werden_uebersprungen(self):
         text = json.dumps({"apps": [{"id": "a"}, {"id": "b", "name": "B", "repo": "x/y", "windows": {"datei": "("}},

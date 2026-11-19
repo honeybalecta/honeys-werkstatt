@@ -73,7 +73,7 @@
     } else {
       if (a.installiert && !a.selbst && a.oeffnen) p.push(['oeffnen', 'Öffnen']);
       if (a.installiert && a.neu) p.push(['laden', 'Neueste Fassung neu installieren']);
-      if (a.installiert && !a.selbst) p.push(['deinstallieren', 'Deinstallieren']);
+      if (a.installiert && !a.selbst && !a.teil) p.push(['deinstallieren', 'Deinstallieren']);   // Teil eines anderen Programms (HoneyRec in HoneyCut): mit diesem entfernen
     }
     p.push(['github', 'Auf GitHub ansehen']);
     return p;

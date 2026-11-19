@@ -179,7 +179,8 @@ class Dienst:
     def zustand_app(self, e: Eintrag) -> dict:
         d = {"id": e.id, "name": e.name, "typ": e.typ, "beschreibung": e.beschreibung, "github": e.github_url,
              "selbst": self.ist_selbst(e), "vorgang": self.vorgaenge.get(e.id), "symbol": None,
-             "fehler": None, "update": False, "installiert": None, "neu": None, "groesse": None, "bereit": False}
+             "fehler": None, "update": False, "installiert": None, "neu": None, "groesse": None, "bereit": False,
+             "teil": getattr(e, "teil_von", None)}
         f = self.fehler.get(e.id)
         if f:
             d["fehler"] = {"meldung": f.meldung, "hinweis": f.hinweis}

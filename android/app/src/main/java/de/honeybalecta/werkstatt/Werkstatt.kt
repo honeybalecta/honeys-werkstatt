@@ -380,7 +380,10 @@ object Werkstatt {
     fun oeffnen(context: Context, z: AppZustand) {
         val e = z.eintrag
         if (e.typ == Typ.WEB) { WebActivity.oeffne(context, e.id); return }
-        val i = e.paket?.let { context.packageManager.getLaunchIntentForPackage(it) }
+        val i = e.paket?.let { p ->
+            e.aktivitaet?.let { a -> Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER).setClassName(p, if (a.startsWith(".")) p + a else a) }
+                ?: context.packageManager.getLaunchIntentForPackage(p)
+        }
         if (i != null) context.startActivity(i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
         else meldungen.tryEmit("${e.name} hat kein Startsymbol.")
     }

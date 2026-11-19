@@ -20,6 +20,8 @@ data class Eintrag(
     // APK
     val paket: String? = null,
     val muster: Regex? = null,       // Dateiname der APK im Release
+    val aktivitaet: String? = null,  // eigenes Startsymbol innerhalb der App (z. B. HoneyRec in HoneyCut: ".RecAlias")
+    val teilVon: String? = null,     // gehört zu einer anderen App (gleiche APK): nicht getrennt deinstallieren
     val fassungen: List<Fassung> = emptyList(),
     // Web-Werkzeug
     val dateien: List<String> = emptyList(),
@@ -69,6 +71,8 @@ data class Katalog(val eintraege: List<Eintrag>) {
                 beschreibung = a.optString("beschreibung"),
                 paket = a.optString("paket").ifBlank { null },
                 muster = a.optString("datei").ifBlank { null }?.let { Regex(it) },
+                aktivitaet = a.optString("aktivitaet").ifBlank { null },
+                teilVon = a.optString("teil_von").ifBlank { null },
                 fassungen = fassungen,
                 dateien = dateien,
                 start = start,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "hinweis": "Welche Apps Honeys Werkstatt zeigt (Android und Windows). Neue Einträge nur nach Rückfrage bei Raphael. Android nutzt paket/datei/fassungen, Windows den Block windows; typ web gilt für beide.",
+  "hinweis": "Welche Apps Honeys Werkstatt zeigt (Android und Windows). Neue Einträge nur nach Rückfrage bei Raphael. Android nutzt paket/datei/fassungen, Windows den Block windows; typ web gilt für beide. Optional: aktivitaet (eigenes Startsymbol in der App, Android) und teil_von (gleiche Installation wie eine andere App – wird nicht getrennt deinstalliert).",
   "apps": [
     {
       "id": "souffleur",
@@ -28,6 +28,22 @@
         "datei": "^HoneyCut-Setup-.*\\.exe$",
         "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
         "exe": "HoneyCut.exe"
+      }
+    },
+    {
+      "id": "honeyrec",
+      "name": "HoneyRec",
+      "typ": "apk",
+      "repo": "honeybalecta/textschnitt",
+      "paket": "de.honeybalecta.textschnitt",
+      "aktivitaet": ".RecAlias",
+      "teil_von": "honeycut",
+      "datei": "^HoneyCut-Android-.*\\.apk$",
+      "beschreibung": "Aufnehmen mit Kamera, Skript, Medien und Bildschirm – gehört zu HoneyCut und öffnet die Aufnahme dort",
+      "windows": {
+        "datei": "^HoneyCut-Setup-.*\\.exe$",
+        "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
+        "exe": "HoneyRec.exe"
       }
     },
     {

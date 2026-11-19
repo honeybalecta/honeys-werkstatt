@@ -47,6 +47,7 @@ class Eintrag:
     muster: Optional[re.Pattern] = None   # Dateiname des Installers im Release
     appid: Optional[str] = None           # Inno-Setup-AppId mit geschweiften Klammern
     exe: Optional[str] = None             # Programmdatei im Installationsordner
+    teil_von: Optional[str] = None        # gehört zu einem anderen Programm (gleicher Installer): nicht getrennt deinstallieren
     dateien: list = field(default_factory=list)
     start: str = "index.html"
 
@@ -72,7 +73,8 @@ def lies_katalog(text: str) -> list[Eintrag]:
                 continue  # reine Android-App
             liste.append(Eintrag(id=a["id"], name=a["name"], typ="app", repo=a["repo"],
                                  beschreibung=a.get("beschreibung", ""), muster=re.compile(w["datei"]),
-                                 appid=(w.get("appid") or "").strip() or None, exe=(w.get("exe") or "").strip() or None))
+                                 appid=(w.get("appid") or "").strip() or None, exe=(w.get("exe") or "").strip() or None,
+                                 teil_von=(a.get("teil_von") or "").strip() or None))
         except (KeyError, TypeError, re.error):
             continue
     return liste
