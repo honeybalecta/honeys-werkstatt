@@ -21,7 +21,7 @@ class Katalog(unittest.TestCase):
     def test_echter_katalog(self):
         text = (HIER.parent.parent / "katalog.json").read_text(encoding="utf-8")
         ids = [e.id for e in kern.lies_katalog(text)]
-        self.assertEqual(ids, ["souffleur", "honeycut", "honeyrec", "honeyplan", "honeydeck", "honeythumb", "karussell", "werkstatt"])  # ohne Vorlesepult
+        self.assertEqual(ids, ["souffleur", "honeycut", "honeyrec", "scriptgenius", "honeydeck", "honeythumb", "karussell", "werkstatt"])  # ohne Vorlesepult
         e = {x.id: x for x in kern.lies_katalog(text)}
         self.assertTrue(e["honeycut"].muster.search("HoneyCut-Setup-2.9.0.exe"))
         self.assertFalse(e["honeycut"].muster.search("HoneyCut-Android-2.9.0.apk"))
@@ -33,10 +33,10 @@ class Katalog(unittest.TestCase):
         self.assertEqual(e["honeyrec"].exe, "HoneyRec.exe")
         self.assertEqual(e["honeyrec"].teil_von, "honeycut")
         self.assertIsNone(e["honeycut"].teil_von)
-        # HoneyPlan ebenso (seit HoneyCut 2.52)
-        self.assertEqual(e["honeyplan"].appid, e["honeycut"].appid)
-        self.assertEqual(e["honeyplan"].exe, "HoneyPlan.exe")
-        self.assertEqual(e["honeyplan"].teil_von, "honeycut")
+        # ScriptGenius ebenso (seit HoneyCut 2.52)
+        self.assertEqual(e["scriptgenius"].appid, e["honeycut"].appid)
+        self.assertEqual(e["scriptgenius"].exe, "ScriptGenius.exe")
+        self.assertEqual(e["scriptgenius"].teil_von, "honeycut")
 
     def test_kaputte_eintraege_werden_uebersprungen(self):
         text = json.dumps({"apps": [{"id": "a"}, {"id": "b", "name": "B", "repo": "x/y", "windows": {"datei": "("}},

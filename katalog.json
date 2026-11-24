@@ -47,8 +47,8 @@
       }
     },
     {
-      "id": "honeyplan",
-      "name": "HoneyPlan",
+      "id": "scriptgenius",
+      "name": "ScriptGenius",
       "typ": "apk",
       "repo": "honeybalecta/textschnitt",
       "paket": "de.honeybalecta.textschnitt",
@@ -59,7 +59,7 @@
       "windows": {
         "datei": "^HoneyCut-Setup-.*\\.exe$",
         "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
-        "exe": "HoneyPlan.exe"
+        "exe": "ScriptGenius.exe"
       }
     },
     {
