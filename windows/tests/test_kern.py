@@ -33,10 +33,14 @@ class Katalog(unittest.TestCase):
         self.assertEqual(e["honeyrec"].exe, "HoneyRec.exe")
         self.assertEqual(e["honeyrec"].teil_von, "honeycut")
         self.assertIsNone(e["honeycut"].teil_von)
-        # ScriptGenius ebenso (seit HoneyCut 2.52)
-        self.assertEqual(e["scriptgenius"].appid, e["honeycut"].appid)
-        self.assertEqual(e["scriptgenius"].exe, "ScriptGenius.exe")
-        self.assertEqual(e["scriptgenius"].teil_von, "honeycut")
+        # ScriptGenius ist ein eigenes Programm (eigenes Repository, eigener Installer) – HoneyCut bettet es nur ein
+        sg = e["scriptgenius"]
+        self.assertEqual((sg.repo, sg.appid, sg.exe), ("honeybalecta/scriptgenius", "{8E2C5B71-4D93-4A6F-B1E8-27C9D5A04F63}", "ScriptGenius.exe"))
+        self.assertIsNone(sg.teil_von)
+        self.assertNotEqual(sg.appid, e["honeycut"].appid)
+        self.assertTrue(sg.muster.search("ScriptGenius-Setup-1.0.0.exe"))
+        self.assertFalse(sg.muster.search("ScriptGenius-Android-1.0.0.apk"))
+        self.assertFalse(sg.muster.search("HoneyCut-Setup-2.52.0.exe"))
 
     def test_kaputte_eintraege_werden_uebersprungen(self):
         text = json.dumps({"apps": [{"id": "a"}, {"id": "b", "name": "B", "repo": "x/y", "windows": {"datei": "("}},

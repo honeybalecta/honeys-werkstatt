@@ -50,15 +50,13 @@
       "id": "scriptgenius",
       "name": "ScriptGenius",
       "typ": "apk",
-      "repo": "honeybalecta/textschnitt",
-      "paket": "de.honeybalecta.textschnitt",
-      "aktivitaet": ".PlanAlias",
-      "teil_von": "honeycut",
-      "datei": "^HoneyCut-Android-.*\\.apk$",
-      "beschreibung": "Videos für mehrere mögliche Ausgänge planen – gehört zu HoneyCut, das daraus je Pfad ein Video baut",
+      "repo": "honeybalecta/scriptgenius",
+      "paket": "de.honeybalecta.scriptgenius",
+      "datei": "^ScriptGenius-Android-.*\\.apk$",
+      "beschreibung": "Videos für mehrere mögliche Ausgänge planen, Drehbuch und Skripte exportieren – läuft auch in HoneyCut",
       "windows": {
-        "datei": "^HoneyCut-Setup-.*\\.exe$",
-        "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
+        "datei": "^ScriptGenius-Setup-.*\\.exe$",
+        "appid": "{8E2C5B71-4D93-4A6F-B1E8-27C9D5A04F63}",
         "exe": "ScriptGenius.exe"
       }
     },
