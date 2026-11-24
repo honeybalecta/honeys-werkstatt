@@ -47,6 +47,22 @@
       }
     },
     {
+      "id": "honeyplan",
+      "name": "HoneyPlan",
+      "typ": "apk",
+      "repo": "honeybalecta/textschnitt",
+      "paket": "de.honeybalecta.textschnitt",
+      "aktivitaet": ".PlanAlias",
+      "teil_von": "honeycut",
+      "datei": "^HoneyCut-Android-.*\\.apk$",
+      "beschreibung": "Videos für mehrere mögliche Ausgänge planen – gehört zu HoneyCut, das daraus je Pfad ein Video baut",
+      "windows": {
+        "datei": "^HoneyCut-Setup-.*\\.exe$",
+        "appid": "{6C7E1A52-6E3B-4D1A-9B3E-2B7F4C1D9A10}",
+        "exe": "HoneyPlan.exe"
+      }
+    },
+    {
       "id": "honeydeck",
       "name": "HoneyDeck",
       "typ": "apk",
