@@ -1,0 +1,1213 @@
+﻿2026-11-28 11:05:14.593   Log opened. (Time zone: UTC+00:00)
+2026-11-28 11:05:14.593   Setup version: Inno Setup version 6.7.1
+2026-11-28 11:05:14.593   Original Setup EXE: D:\a\honeys-werkstatt\honeys-werkstatt\dist\HoneysWerkstatt-Setup-1.0.2.exe
+2026-11-28 11:05:14.593   Setup command line: /SL5="$50212,17309449,866816,D:\a\honeys-werkstatt\honeys-werkstatt\dist\HoneysWerkstatt-Setup-1.0.2.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=D:\a\honeys-werkstatt\honeys-werkstatt\ci\installation.log
+2026-11-28 11:05:14.593   Windows version: 10.0.26100
+2026-11-28 11:05:14.593   Windows architecture: x64 (64-bit)
+2026-11-28 11:05:14.593   Machine types supported by system: x86 x64
+2026-11-28 11:05:14.593   User privileges: Administrative
+2026-11-28 11:05:14.596   Administrative install mode: No
+2026-11-28 11:05:14.596   Install mode root key: HKEY_CURRENT_USER
+2026-11-28 11:05:14.596   64-bit install mode: Yes
+2026-11-28 11:05:14.596   RedirectionGuard status for current process: Enabled in enforcing mode
+2026-11-28 11:05:14.598   Created protected temporary directory: C:\Users\RUNNER~1\AppData\Local\Temp\is-OTSBV4N50P.tmp
+2026-11-28 11:05:14.666   Found 60 files to register with RestartManager.
+2026-11-28 11:05:14.666   Calling RestartManager's RmGetList.
+2026-11-28 11:05:14.672   RmGetList finished successfully.
+2026-11-28 11:05:14.672   RestartManager found no applications using one of our files.
+2026-11-28 11:05:14.675   Starting the installation process.
+2026-11-28 11:05:14.676   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt
+2026-11-28 11:05:14.676   Directory for uninstall files: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt
+2026-11-28 11:05:14.676   Creating new uninstall log: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\unins000.dat
+2026-11-28 11:05:14.679   -- File entry --
+2026-11-28 11:05:14.679   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\unins000.exe
+2026-11-28 11:05:14.679   Non-default bitness: 32-bit
+2026-11-28 11:05:14.680   Time stamp of our file: 2026-11-28 11:05:14.523
+2026-11-28 11:05:14.680   Installing the file.
+2026-11-28 11:05:14.685   Successfully installed the file.
+2026-11-28 11:05:14.685   -- File entry --
+2026-11-28 11:05:14.685   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\HoneysWerkstatt.exe
+2026-11-28 11:05:14.685   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.685   Installing the file.
+2026-11-28 11:05:14.750   Successfully installed the file.
+2026-11-28 11:05:14.750   -- File entry --
+2026-11-28 11:05:14.750   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-console-l1-1-0.dll
+2026-11-28 11:05:14.750   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.750   Installing the file.
+2026-11-28 11:05:14.750   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal
+2026-11-28 11:05:14.754   Successfully installed the file.
+2026-11-28 11:05:14.754   -- File entry --
+2026-11-28 11:05:14.754   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-datetime-l1-1-0.dll
+2026-11-28 11:05:14.754   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.754   Installing the file.
+2026-11-28 11:05:14.756   Successfully installed the file.
+2026-11-28 11:05:14.756   -- File entry --
+2026-11-28 11:05:14.756   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-debug-l1-1-0.dll
+2026-11-28 11:05:14.756   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.756   Installing the file.
+2026-11-28 11:05:14.758   Successfully installed the file.
+2026-11-28 11:05:14.758   -- File entry --
+2026-11-28 11:05:14.758   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-11-28 11:05:14.758   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.758   Installing the file.
+2026-11-28 11:05:14.759   Successfully installed the file.
+2026-11-28 11:05:14.759   -- File entry --
+2026-11-28 11:05:14.759   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-fibers-l1-1-0.dll
+2026-11-28 11:05:14.759   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.759   Installing the file.
+2026-11-28 11:05:14.759   Successfully installed the file.
+2026-11-28 11:05:14.759   -- File entry --
+2026-11-28 11:05:14.759   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-fibers-l1-1-1.dll
+2026-11-28 11:05:14.761   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.761   Installing the file.
+2026-11-28 11:05:14.761   Successfully installed the file.
+2026-11-28 11:05:14.761   -- File entry --
+2026-11-28 11:05:14.761   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-file-l1-1-0.dll
+2026-11-28 11:05:14.761   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.761   Installing the file.
+2026-11-28 11:05:14.763   Successfully installed the file.
+2026-11-28 11:05:14.763   -- File entry --
+2026-11-28 11:05:14.763   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-file-l1-2-0.dll
+2026-11-28 11:05:14.763   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.763   Installing the file.
+2026-11-28 11:05:14.764   Successfully installed the file.
+2026-11-28 11:05:14.764   -- File entry --
+2026-11-28 11:05:14.764   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-file-l2-1-0.dll
+2026-11-28 11:05:14.764   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.764   Installing the file.
+2026-11-28 11:05:14.765   Successfully installed the file.
+2026-11-28 11:05:14.765   -- File entry --
+2026-11-28 11:05:14.765   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-handle-l1-1-0.dll
+2026-11-28 11:05:14.765   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.765   Installing the file.
+2026-11-28 11:05:14.770   Successfully installed the file.
+2026-11-28 11:05:14.770   -- File entry --
+2026-11-28 11:05:14.770   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-heap-l1-1-0.dll
+2026-11-28 11:05:14.770   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.770   Installing the file.
+2026-11-28 11:05:14.771   Successfully installed the file.
+2026-11-28 11:05:14.771   -- File entry --
+2026-11-28 11:05:14.771   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+2026-11-28 11:05:14.771   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.771   Installing the file.
+2026-11-28 11:05:14.772   Successfully installed the file.
+2026-11-28 11:05:14.772   -- File entry --
+2026-11-28 11:05:14.772   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-11-28 11:05:14.773   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.773   Installing the file.
+2026-11-28 11:05:14.774   Successfully installed the file.
+2026-11-28 11:05:14.774   -- File entry --
+2026-11-28 11:05:14.774   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-11-28 11:05:14.774   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.774   Installing the file.
+2026-11-28 11:05:14.775   Successfully installed the file.
+2026-11-28 11:05:14.775   -- File entry --
+2026-11-28 11:05:14.775   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-localization-l1-2-0.dll
+2026-11-28 11:05:14.775   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.775   Installing the file.
+2026-11-28 11:05:14.775   Successfully installed the file.
+2026-11-28 11:05:14.775   -- File entry --
+2026-11-28 11:05:14.775   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-memory-l1-1-0.dll
+2026-11-28 11:05:14.775   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.775   Installing the file.
+2026-11-28 11:05:14.779   Successfully installed the file.
+2026-11-28 11:05:14.779   -- File entry --
+2026-11-28 11:05:14.779   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-11-28 11:05:14.779   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.779   Installing the file.
+2026-11-28 11:05:14.779   Successfully installed the file.
+2026-11-28 11:05:14.779   -- File entry --
+2026-11-28 11:05:14.779   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-11-28 11:05:14.779   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.779   Installing the file.
+2026-11-28 11:05:14.781   Successfully installed the file.
+2026-11-28 11:05:14.781   -- File entry --
+2026-11-28 11:05:14.781   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+2026-11-28 11:05:14.781   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.781   Installing the file.
+2026-11-28 11:05:14.781   Successfully installed the file.
+2026-11-28 11:05:14.781   -- File entry --
+2026-11-28 11:05:14.781   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+2026-11-28 11:05:14.783   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.783   Installing the file.
+2026-11-28 11:05:14.783   Successfully installed the file.
+2026-11-28 11:05:14.783   -- File entry --
+2026-11-28 11:05:14.783   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-profile-l1-1-0.dll
+2026-11-28 11:05:14.783   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.783   Installing the file.
+2026-11-28 11:05:14.783   Successfully installed the file.
+2026-11-28 11:05:14.785   -- File entry --
+2026-11-28 11:05:14.785   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-11-28 11:05:14.785   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.785   Installing the file.
+2026-11-28 11:05:14.785   Successfully installed the file.
+2026-11-28 11:05:14.785   -- File entry --
+2026-11-28 11:05:14.785   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-string-l1-1-0.dll
+2026-11-28 11:05:14.785   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.785   Installing the file.
+2026-11-28 11:05:14.787   Successfully installed the file.
+2026-11-28 11:05:14.787   -- File entry --
+2026-11-28 11:05:14.787   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-synch-l1-1-0.dll
+2026-11-28 11:05:14.787   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.787   Installing the file.
+2026-11-28 11:05:14.787   Successfully installed the file.
+2026-11-28 11:05:14.787   -- File entry --
+2026-11-28 11:05:14.787   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-synch-l1-2-0.dll
+2026-11-28 11:05:14.787   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.787   Installing the file.
+2026-11-28 11:05:14.789   Successfully installed the file.
+2026-11-28 11:05:14.789   -- File entry --
+2026-11-28 11:05:14.789   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-11-28 11:05:14.789   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.789   Installing the file.
+2026-11-28 11:05:14.791   Successfully installed the file.
+2026-11-28 11:05:14.791   -- File entry --
+2026-11-28 11:05:14.791   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-11-28 11:05:14.791   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.791   Installing the file.
+2026-11-28 11:05:14.791   Successfully installed the file.
+2026-11-28 11:05:14.791   -- File entry --
+2026-11-28 11:05:14.791   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-timezone-l1-1-0.dll
+2026-11-28 11:05:14.791   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.791   Installing the file.
+2026-11-28 11:05:14.795   Successfully installed the file.
+2026-11-28 11:05:14.795   -- File entry --
+2026-11-28 11:05:14.795   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-core-util-l1-1-0.dll
+2026-11-28 11:05:14.795   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.795   Installing the file.
+2026-11-28 11:05:14.795   Successfully installed the file.
+2026-11-28 11:05:14.795   -- File entry --
+2026-11-28 11:05:14.795   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-conio-l1-1-0.dll
+2026-11-28 11:05:14.795   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.795   Installing the file.
+2026-11-28 11:05:14.797   Successfully installed the file.
+2026-11-28 11:05:14.797   -- File entry --
+2026-11-28 11:05:14.797   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-convert-l1-1-0.dll
+2026-11-28 11:05:14.797   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.797   Installing the file.
+2026-11-28 11:05:14.797   Successfully installed the file.
+2026-11-28 11:05:14.797   -- File entry --
+2026-11-28 11:05:14.797   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-environment-l1-1-0.dll
+2026-11-28 11:05:14.797   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.797   Installing the file.
+2026-11-28 11:05:14.799   Successfully installed the file.
+2026-11-28 11:05:14.799   -- File entry --
+2026-11-28 11:05:14.799   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-11-28 11:05:14.799   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.799   Installing the file.
+2026-11-28 11:05:14.799   Successfully installed the file.
+2026-11-28 11:05:14.799   -- File entry --
+2026-11-28 11:05:14.801   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-heap-l1-1-0.dll
+2026-11-28 11:05:14.801   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.801   Installing the file.
+2026-11-28 11:05:14.801   Successfully installed the file.
+2026-11-28 11:05:14.801   -- File entry --
+2026-11-28 11:05:14.801   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-locale-l1-1-0.dll
+2026-11-28 11:05:14.801   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.801   Installing the file.
+2026-11-28 11:05:14.805   Successfully installed the file.
+2026-11-28 11:05:14.805   -- File entry --
+2026-11-28 11:05:14.805   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-math-l1-1-0.dll
+2026-11-28 11:05:14.805   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.805   Installing the file.
+2026-11-28 11:05:14.807   Successfully installed the file.
+2026-11-28 11:05:14.807   -- File entry --
+2026-11-28 11:05:14.807   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-process-l1-1-0.dll
+2026-11-28 11:05:14.807   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.807   Installing the file.
+2026-11-28 11:05:14.809   Successfully installed the file.
+2026-11-28 11:05:14.809   -- File entry --
+2026-11-28 11:05:14.809   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+2026-11-28 11:05:14.809   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.809   Installing the file.
+2026-11-28 11:05:14.810   Successfully installed the file.
+2026-11-28 11:05:14.810   -- File entry --
+2026-11-28 11:05:14.810   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+2026-11-28 11:05:14.810   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.810   Installing the file.
+2026-11-28 11:05:14.811   Successfully installed the file.
+2026-11-28 11:05:14.811   -- File entry --
+2026-11-28 11:05:14.811   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-string-l1-1-0.dll
+2026-11-28 11:05:14.811   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.811   Installing the file.
+2026-11-28 11:05:14.813   Successfully installed the file.
+2026-11-28 11:05:14.813   -- File entry --
+2026-11-28 11:05:14.813   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-time-l1-1-0.dll
+2026-11-28 11:05:14.813   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.813   Installing the file.
+2026-11-28 11:05:14.815   Successfully installed the file.
+2026-11-28 11:05:14.815   -- File entry --
+2026-11-28 11:05:14.815   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\api-ms-win-crt-utility-l1-1-0.dll
+2026-11-28 11:05:14.815   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.815   Installing the file.
+2026-11-28 11:05:14.816   Successfully installed the file.
+2026-11-28 11:05:14.817   -- File entry --
+2026-11-28 11:05:14.817   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\app-version.txt
+2026-11-28 11:05:14.817   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.817   Installing the file.
+2026-11-28 11:05:14.817   Successfully installed the file.
+2026-11-28 11:05:14.817   -- File entry --
+2026-11-28 11:05:14.817   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\base_library.zip
+2026-11-28 11:05:14.817   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.817   Installing the file.
+2026-11-28 11:05:14.843   Successfully installed the file.
+2026-11-28 11:05:14.843   -- File entry --
+2026-11-28 11:05:14.843   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\katalog.json
+2026-11-28 11:05:14.843   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.843   Installing the file.
+2026-11-28 11:05:14.845   Successfully installed the file.
+2026-11-28 11:05:14.845   -- File entry --
+2026-11-28 11:05:14.845   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\libcrypto-3.dll
+2026-11-28 11:05:14.845   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.845   Installing the file.
+2026-11-28 11:05:14.946   Successfully installed the file.
+2026-11-28 11:05:14.946   -- File entry --
+2026-11-28 11:05:14.946   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\libffi-8.dll
+2026-11-28 11:05:14.948   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.948   Installing the file.
+2026-11-28 11:05:14.950   Successfully installed the file.
+2026-11-28 11:05:14.950   -- File entry --
+2026-11-28 11:05:14.950   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\libssl-3.dll
+2026-11-28 11:05:14.950   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.950   Installing the file.
+2026-11-28 11:05:14.966   Successfully installed the file.
+2026-11-28 11:05:14.966   -- File entry --
+2026-11-28 11:05:14.966   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pyexpat.pyd
+2026-11-28 11:05:14.966   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.966   Installing the file.
+2026-11-28 11:05:14.972   Successfully installed the file.
+2026-11-28 11:05:14.972   -- File entry --
+2026-11-28 11:05:14.972   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\python312.dll
+2026-11-28 11:05:14.974   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:14.974   Installing the file.
+2026-11-28 11:05:15.109   Successfully installed the file.
+2026-11-28 11:05:15.109   -- File entry --
+2026-11-28 11:05:15.109   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\select.pyd
+2026-11-28 11:05:15.109   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.109   Installing the file.
+2026-11-28 11:05:15.112   Successfully installed the file.
+2026-11-28 11:05:15.112   -- File entry --
+2026-11-28 11:05:15.112   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ucrtbase.dll
+2026-11-28 11:05:15.112   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.112   Installing the file.
+2026-11-28 11:05:15.144   Successfully installed the file.
+2026-11-28 11:05:15.144   -- File entry --
+2026-11-28 11:05:15.144   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\unicodedata.pyd
+2026-11-28 11:05:15.144   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.144   Installing the file.
+2026-11-28 11:05:15.215   Successfully installed the file.
+2026-11-28 11:05:15.215   -- File entry --
+2026-11-28 11:05:15.215   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\VCRUNTIME140.dll
+2026-11-28 11:05:15.215   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.215   Installing the file.
+2026-11-28 11:05:15.481   Successfully installed the file.
+2026-11-28 11:05:15.481   -- File entry --
+2026-11-28 11:05:15.481   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\VCRUNTIME140_1.dll
+2026-11-28 11:05:15.481   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.481   Installing the file.
+2026-11-28 11:05:15.485   Successfully installed the file.
+2026-11-28 11:05:15.485   -- File entry --
+2026-11-28 11:05:15.485   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\werkstatt.ico
+2026-11-28 11:05:15.485   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.485   Installing the file.
+2026-11-28 11:05:15.487   Successfully installed the file.
+2026-11-28 11:05:15.487   -- File entry --
+2026-11-28 11:05:15.487   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_asyncio.pyd
+2026-11-28 11:05:15.488   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.488   Installing the file.
+2026-11-28 11:05:15.493   Successfully installed the file.
+2026-11-28 11:05:15.493   -- File entry --
+2026-11-28 11:05:15.493   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_bz2.pyd
+2026-11-28 11:05:15.494   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.494   Installing the file.
+2026-11-28 11:05:15.518   Successfully installed the file.
+2026-11-28 11:05:15.518   -- File entry --
+2026-11-28 11:05:15.518   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_cffi_backend.cp312-win_amd64.pyd
+2026-11-28 11:05:15.518   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.518   Installing the file.
+2026-11-28 11:05:15.527   Successfully installed the file.
+2026-11-28 11:05:15.527   -- File entry --
+2026-11-28 11:05:15.527   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_ctypes.pyd
+2026-11-28 11:05:15.527   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.527   Installing the file.
+2026-11-28 11:05:15.532   Successfully installed the file.
+2026-11-28 11:05:15.532   -- File entry --
+2026-11-28 11:05:15.532   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_decimal.pyd
+2026-11-28 11:05:15.532   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.532   Installing the file.
+2026-11-28 11:05:15.541   Successfully installed the file.
+2026-11-28 11:05:15.543   -- File entry --
+2026-11-28 11:05:15.543   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_elementtree.pyd
+2026-11-28 11:05:15.543   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.543   Installing the file.
+2026-11-28 11:05:15.552   Successfully installed the file.
+2026-11-28 11:05:15.553   -- File entry --
+2026-11-28 11:05:15.553   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_hashlib.pyd
+2026-11-28 11:05:15.553   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.553   Installing the file.
+2026-11-28 11:05:15.555   Successfully installed the file.
+2026-11-28 11:05:15.555   -- File entry --
+2026-11-28 11:05:15.555   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_lzma.pyd
+2026-11-28 11:05:15.555   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.555   Installing the file.
+2026-11-28 11:05:15.563   Successfully installed the file.
+2026-11-28 11:05:15.563   -- File entry --
+2026-11-28 11:05:15.563   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_multiprocessing.pyd
+2026-11-28 11:05:15.563   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.563   Installing the file.
+2026-11-28 11:05:15.565   Successfully installed the file.
+2026-11-28 11:05:15.565   -- File entry --
+2026-11-28 11:05:15.565   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_overlapped.pyd
+2026-11-28 11:05:15.565   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.565   Installing the file.
+2026-11-28 11:05:15.591   Successfully installed the file.
+2026-11-28 11:05:15.591   -- File entry --
+2026-11-28 11:05:15.591   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_queue.pyd
+2026-11-28 11:05:15.591   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.591   Installing the file.
+2026-11-28 11:05:15.593   Successfully installed the file.
+2026-11-28 11:05:15.593   -- File entry --
+2026-11-28 11:05:15.593   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_socket.pyd
+2026-11-28 11:05:15.593   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.593   Installing the file.
+2026-11-28 11:05:15.597   Successfully installed the file.
+2026-11-28 11:05:15.597   -- File entry --
+2026-11-28 11:05:15.597   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_ssl.pyd
+2026-11-28 11:05:15.597   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.597   Installing the file.
+2026-11-28 11:05:15.604   Successfully installed the file.
+2026-11-28 11:05:15.604   -- File entry --
+2026-11-28 11:05:15.604   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_uuid.pyd
+2026-11-28 11:05:15.604   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.604   Installing the file.
+2026-11-28 11:05:15.606   Successfully installed the file.
+2026-11-28 11:05:15.606   -- File entry --
+2026-11-28 11:05:15.606   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\_wmi.pyd
+2026-11-28 11:05:15.606   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.606   Installing the file.
+2026-11-28 11:05:15.610   Successfully installed the file.
+2026-11-28 11:05:15.610   -- File entry --
+2026-11-28 11:05:15.610   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\hostfxr.py
+2026-11-28 11:05:15.610   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.610   Installing the file.
+2026-11-28 11:05:15.610   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader
+2026-11-28 11:05:15.612   Successfully installed the file.
+2026-11-28 11:05:15.612   -- File entry --
+2026-11-28 11:05:15.612   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\mono.py
+2026-11-28 11:05:15.612   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.612   Installing the file.
+2026-11-28 11:05:15.644   Successfully installed the file.
+2026-11-28 11:05:15.644   -- File entry --
+2026-11-28 11:05:15.644   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\netfx.py
+2026-11-28 11:05:15.644   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.644   Installing the file.
+2026-11-28 11:05:15.644   Successfully installed the file.
+2026-11-28 11:05:15.644   -- File entry --
+2026-11-28 11:05:15.644   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\py.typed
+2026-11-28 11:05:15.645   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.645   Installing the file.
+2026-11-28 11:05:15.645   Successfully installed the file.
+2026-11-28 11:05:15.645   -- File entry --
+2026-11-28 11:05:15.645   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\types.py
+2026-11-28 11:05:15.646   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.646   Installing the file.
+2026-11-28 11:05:15.647   Successfully installed the file.
+2026-11-28 11:05:15.647   -- File entry --
+2026-11-28 11:05:15.647   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\__init__.py
+2026-11-28 11:05:15.647   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.647   Installing the file.
+2026-11-28 11:05:15.679   Successfully installed the file.
+2026-11-28 11:05:15.679   -- File entry --
+2026-11-28 11:05:15.679   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\hostfxr.py
+2026-11-28 11:05:15.681   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.681   Installing the file.
+2026-11-28 11:05:15.681   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi
+2026-11-28 11:05:15.681   Successfully installed the file.
+2026-11-28 11:05:15.681   -- File entry --
+2026-11-28 11:05:15.681   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\mono.py
+2026-11-28 11:05:15.681   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.681   Installing the file.
+2026-11-28 11:05:15.681   Successfully installed the file.
+2026-11-28 11:05:15.681   -- File entry --
+2026-11-28 11:05:15.681   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\netfx.py
+2026-11-28 11:05:15.683   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.683   Installing the file.
+2026-11-28 11:05:15.695   Successfully installed the file.
+2026-11-28 11:05:15.695   -- File entry --
+2026-11-28 11:05:15.695   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\__init__.py
+2026-11-28 11:05:15.695   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.695   Installing the file.
+2026-11-28 11:05:15.695   Successfully installed the file.
+2026-11-28 11:05:15.695   -- File entry --
+2026-11-28 11:05:15.695   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+2026-11-28 11:05:15.695   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.695   Installing the file.
+2026-11-28 11:05:15.695   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls
+2026-11-28 11:05:15.695   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\amd64
+2026-11-28 11:05:15.699   Successfully installed the file.
+2026-11-28 11:05:15.699   -- File entry --
+2026-11-28 11:05:15.699   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.pdb
+2026-11-28 11:05:15.699   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.699   Installing the file.
+2026-11-28 11:05:15.701   Successfully installed the file.
+2026-11-28 11:05:15.701   -- File entry --
+2026-11-28 11:05:15.701   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+2026-11-28 11:05:15.701   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.701   Installing the file.
+2026-11-28 11:05:15.703   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\x86
+2026-11-28 11:05:15.705   Successfully installed the file.
+2026-11-28 11:05:15.705   -- File entry --
+2026-11-28 11:05:15.705   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\ffi\dlls\x86\ClrLoader.pdb
+2026-11-28 11:05:15.705   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.705   Installing the file.
+2026-11-28 11:05:15.713   Successfully installed the file.
+2026-11-28 11:05:15.713   -- File entry --
+2026-11-28 11:05:15.713   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\clr_error.py
+2026-11-28 11:05:15.713   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.713   Installing the file.
+2026-11-28 11:05:15.713   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util
+2026-11-28 11:05:15.715   Successfully installed the file.
+2026-11-28 11:05:15.715   -- File entry --
+2026-11-28 11:05:15.715   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\coreclr_errors.py
+2026-11-28 11:05:15.716   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.716   Installing the file.
+2026-11-28 11:05:15.718   Successfully installed the file.
+2026-11-28 11:05:15.718   -- File entry --
+2026-11-28 11:05:15.718   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\find.py
+2026-11-28 11:05:15.718   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.718   Installing the file.
+2026-11-28 11:05:15.721   Successfully installed the file.
+2026-11-28 11:05:15.721   -- File entry --
+2026-11-28 11:05:15.721   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\hostfxr_errors.py
+2026-11-28 11:05:15.721   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.721   Installing the file.
+2026-11-28 11:05:15.727   Successfully installed the file.
+2026-11-28 11:05:15.727   -- File entry --
+2026-11-28 11:05:15.727   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\runtime_spec.py
+2026-11-28 11:05:15.727   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.727   Installing the file.
+2026-11-28 11:05:15.727   Successfully installed the file.
+2026-11-28 11:05:15.727   -- File entry --
+2026-11-28 11:05:15.727   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader\util\__init__.py
+2026-11-28 11:05:15.727   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.727   Installing the file.
+2026-11-28 11:05:15.729   Successfully installed the file.
+2026-11-28 11:05:15.729   -- File entry --
+2026-11-28 11:05:15.729   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\INSTALLER
+2026-11-28 11:05:15.729   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.729   Installing the file.
+2026-11-28 11:05:15.729   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info
+2026-11-28 11:05:15.743   Successfully installed the file.
+2026-11-28 11:05:15.743   -- File entry --
+2026-11-28 11:05:15.743   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\METADATA
+2026-11-28 11:05:15.743   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.743   Installing the file.
+2026-11-28 11:05:15.743   Successfully installed the file.
+2026-11-28 11:05:15.743   -- File entry --
+2026-11-28 11:05:15.743   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\RECORD
+2026-11-28 11:05:15.743   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.743   Installing the file.
+2026-11-28 11:05:15.747   Successfully installed the file.
+2026-11-28 11:05:15.747   -- File entry --
+2026-11-28 11:05:15.747   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\top_level.txt
+2026-11-28 11:05:15.747   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.747   Installing the file.
+2026-11-28 11:05:15.751   Successfully installed the file.
+2026-11-28 11:05:15.753   -- File entry --
+2026-11-28 11:05:15.753   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\WHEEL
+2026-11-28 11:05:15.753   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.753   Installing the file.
+2026-11-28 11:05:15.753   Successfully installed the file.
+2026-11-28 11:05:15.753   -- File entry --
+2026-11-28 11:05:15.753   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\licenses\LICENSE
+2026-11-28 11:05:15.753   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.753   Installing the file.
+2026-11-28 11:05:15.753   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\clr_loader-0.3.1.dist-info\licenses
+2026-11-28 11:05:15.753   Successfully installed the file.
+2026-11-28 11:05:15.755   -- File entry --
+2026-11-28 11:05:15.755   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_avif.cp312-win_amd64.pyd
+2026-11-28 11:05:15.755   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.755   Installing the file.
+2026-11-28 11:05:15.755   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL
+2026-11-28 11:05:15.948   Successfully installed the file.
+2026-11-28 11:05:15.948   -- File entry --
+2026-11-28 11:05:15.948   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_imaging.cp312-win_amd64.pyd
+2026-11-28 11:05:15.948   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:15.950   Installing the file.
+2026-11-28 11:05:16.035   Successfully installed the file.
+2026-11-28 11:05:16.035   -- File entry --
+2026-11-28 11:05:16.035   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_imagingcms.cp312-win_amd64.pyd
+2026-11-28 11:05:16.035   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.035   Installing the file.
+2026-11-28 11:05:16.062   Successfully installed the file.
+2026-11-28 11:05:16.062   -- File entry --
+2026-11-28 11:05:16.062   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_imagingft.cp312-win_amd64.pyd
+2026-11-28 11:05:16.062   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.062   Installing the file.
+2026-11-28 11:05:16.130   Successfully installed the file.
+2026-11-28 11:05:16.130   -- File entry --
+2026-11-28 11:05:16.130   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_imagingtk.cp312-win_amd64.pyd
+2026-11-28 11:05:16.130   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.130   Installing the file.
+2026-11-28 11:05:16.131   Successfully installed the file.
+2026-11-28 11:05:16.131   -- File entry --
+2026-11-28 11:05:16.131   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\PIL\_webp.cp312-win_amd64.pyd
+2026-11-28 11:05:16.132   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.132   Installing the file.
+2026-11-28 11:05:16.145   Successfully installed the file.
+2026-11-28 11:05:16.145   -- File entry --
+2026-11-28 11:05:16.145   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_appindicator.py
+2026-11-28 11:05:16.146   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.146   Installing the file.
+2026-11-28 11:05:16.146   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray
+2026-11-28 11:05:16.172   Successfully installed the file.
+2026-11-28 11:05:16.172   -- File entry --
+2026-11-28 11:05:16.172   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_base.py
+2026-11-28 11:05:16.172   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.172   Installing the file.
+2026-11-28 11:05:16.172   Successfully installed the file.
+2026-11-28 11:05:16.172   -- File entry --
+2026-11-28 11:05:16.172   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_darwin.py
+2026-11-28 11:05:16.172   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.172   Installing the file.
+2026-11-28 11:05:16.174   Successfully installed the file.
+2026-11-28 11:05:16.174   -- File entry --
+2026-11-28 11:05:16.174   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_dummy.py
+2026-11-28 11:05:16.174   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.174   Installing the file.
+2026-11-28 11:05:16.174   Successfully installed the file.
+2026-11-28 11:05:16.174   -- File entry --
+2026-11-28 11:05:16.174   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_gtk.py
+2026-11-28 11:05:16.174   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.174   Installing the file.
+2026-11-28 11:05:16.222   Successfully installed the file.
+2026-11-28 11:05:16.222   -- File entry --
+2026-11-28 11:05:16.222   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_info.py
+2026-11-28 11:05:16.222   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.222   Installing the file.
+2026-11-28 11:05:16.223   Successfully installed the file.
+2026-11-28 11:05:16.223   -- File entry --
+2026-11-28 11:05:16.223   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_win32.py
+2026-11-28 11:05:16.223   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.223   Installing the file.
+2026-11-28 11:05:16.224   Successfully installed the file.
+2026-11-28 11:05:16.224   -- File entry --
+2026-11-28 11:05:16.224   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_xorg.py
+2026-11-28 11:05:16.224   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.224   Installing the file.
+2026-11-28 11:05:16.225   Successfully installed the file.
+2026-11-28 11:05:16.225   -- File entry --
+2026-11-28 11:05:16.225   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\__init__.py
+2026-11-28 11:05:16.225   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.225   Installing the file.
+2026-11-28 11:05:16.274   Successfully installed the file.
+2026-11-28 11:05:16.274   -- File entry --
+2026-11-28 11:05:16.274   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_util\gtk.py
+2026-11-28 11:05:16.274   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.274   Installing the file.
+2026-11-28 11:05:16.274   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_util
+2026-11-28 11:05:16.274   Successfully installed the file.
+2026-11-28 11:05:16.274   -- File entry --
+2026-11-28 11:05:16.274   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_util\notify_dbus.py
+2026-11-28 11:05:16.274   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.274   Installing the file.
+2026-11-28 11:05:16.279   Successfully installed the file.
+2026-11-28 11:05:16.279   -- File entry --
+2026-11-28 11:05:16.279   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_util\win32.py
+2026-11-28 11:05:16.279   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.279   Installing the file.
+2026-11-28 11:05:16.282   Successfully installed the file.
+2026-11-28 11:05:16.282   -- File entry --
+2026-11-28 11:05:16.282   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray\_util\__init__.py
+2026-11-28 11:05:16.282   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.282   Installing the file.
+2026-11-28 11:05:16.283   Successfully installed the file.
+2026-11-28 11:05:16.283   -- File entry --
+2026-11-28 11:05:16.283   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\COPYING
+2026-11-28 11:05:16.284   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.284   Installing the file.
+2026-11-28 11:05:16.284   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info
+2026-11-28 11:05:16.313   Successfully installed the file.
+2026-11-28 11:05:16.313   -- File entry --
+2026-11-28 11:05:16.313   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\COPYING.LGPL
+2026-11-28 11:05:16.313   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.313   Installing the file.
+2026-11-28 11:05:16.313   Successfully installed the file.
+2026-11-28 11:05:16.313   -- File entry --
+2026-11-28 11:05:16.313   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\INSTALLER
+2026-11-28 11:05:16.313   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.313   Installing the file.
+2026-11-28 11:05:16.319   Successfully installed the file.
+2026-11-28 11:05:16.319   -- File entry --
+2026-11-28 11:05:16.319   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\METADATA
+2026-11-28 11:05:16.319   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.319   Installing the file.
+2026-11-28 11:05:16.320   Successfully installed the file.
+2026-11-28 11:05:16.320   -- File entry --
+2026-11-28 11:05:16.320   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\RECORD
+2026-11-28 11:05:16.320   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.320   Installing the file.
+2026-11-28 11:05:16.452   Successfully installed the file.
+2026-11-28 11:05:16.452   -- File entry --
+2026-11-28 11:05:16.452   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\REQUESTED
+2026-11-28 11:05:16.452   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.452   Installing the file.
+2026-11-28 11:05:16.452   Successfully installed the file.
+2026-11-28 11:05:16.454   -- File entry --
+2026-11-28 11:05:16.454   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\top_level.txt
+2026-11-28 11:05:16.454   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.454   Installing the file.
+2026-11-28 11:05:16.454   Successfully installed the file.
+2026-11-28 11:05:16.454   -- File entry --
+2026-11-28 11:05:16.454   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\WHEEL
+2026-11-28 11:05:16.454   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.454   Installing the file.
+2026-11-28 11:05:16.454   Successfully installed the file.
+2026-11-28 11:05:16.454   -- File entry --
+2026-11-28 11:05:16.454   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pystray-0.19.5.dist-info\zip-safe
+2026-11-28 11:05:16.454   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.454   Installing the file.
+2026-11-28 11:05:16.488   Successfully installed the file.
+2026-11-28 11:05:16.488   -- File entry --
+2026-11-28 11:05:16.488   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\__init__.py
+2026-11-28 11:05:16.488   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.488   Installing the file.
+2026-11-28 11:05:16.488   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet
+2026-11-28 11:05:16.488   Successfully installed the file.
+2026-11-28 11:05:16.488   -- File entry --
+2026-11-28 11:05:16.488   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\runtime\Python.Runtime.deps.json
+2026-11-28 11:05:16.490   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.490   Installing the file.
+2026-11-28 11:05:16.490   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\runtime
+2026-11-28 11:05:16.527   Successfully installed the file.
+2026-11-28 11:05:16.527   -- File entry --
+2026-11-28 11:05:16.527   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\runtime\Python.Runtime.dll
+2026-11-28 11:05:16.527   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.527   Installing the file.
+2026-11-28 11:05:16.541   Successfully installed the file.
+2026-11-28 11:05:16.541   -- File entry --
+2026-11-28 11:05:16.541   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\runtime\Python.Runtime.xml
+2026-11-28 11:05:16.541   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.541   Installing the file.
+2026-11-28 11:05:16.572   Successfully installed the file.
+2026-11-28 11:05:16.572   -- File entry --
+2026-11-28 11:05:16.572   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\_pyinstaller\hook-clr.py
+2026-11-28 11:05:16.572   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.572   Installing the file.
+2026-11-28 11:05:16.572   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\_pyinstaller
+2026-11-28 11:05:16.602   Successfully installed the file.
+2026-11-28 11:05:16.604   -- File entry --
+2026-11-28 11:05:16.604   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet\_pyinstaller\__init__.py
+2026-11-28 11:05:16.604   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.604   Installing the file.
+2026-11-28 11:05:16.604   Successfully installed the file.
+2026-11-28 11:05:16.604   -- File entry --
+2026-11-28 11:05:16.604   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\entry_points.txt
+2026-11-28 11:05:16.606   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.606   Installing the file.
+2026-11-28 11:05:16.606   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info
+2026-11-28 11:05:16.606   Successfully installed the file.
+2026-11-28 11:05:16.606   -- File entry --
+2026-11-28 11:05:16.606   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\INSTALLER
+2026-11-28 11:05:16.606   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.606   Installing the file.
+2026-11-28 11:05:16.632   Successfully installed the file.
+2026-11-28 11:05:16.632   -- File entry --
+2026-11-28 11:05:16.632   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\METADATA
+2026-11-28 11:05:16.632   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.632   Installing the file.
+2026-11-28 11:05:16.666   Successfully installed the file.
+2026-11-28 11:05:16.666   -- File entry --
+2026-11-28 11:05:16.666   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\RECORD
+2026-11-28 11:05:16.666   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.666   Installing the file.
+2026-11-28 11:05:16.667   Successfully installed the file.
+2026-11-28 11:05:16.667   -- File entry --
+2026-11-28 11:05:16.667   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\top_level.txt
+2026-11-28 11:05:16.667   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.667   Installing the file.
+2026-11-28 11:05:16.668   Successfully installed the file.
+2026-11-28 11:05:16.668   -- File entry --
+2026-11-28 11:05:16.668   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\WHEEL
+2026-11-28 11:05:16.668   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.668   Installing the file.
+2026-11-28 11:05:16.695   Successfully installed the file.
+2026-11-28 11:05:16.695   -- File entry --
+2026-11-28 11:05:16.695   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\licenses\AUTHORS.md
+2026-11-28 11:05:16.695   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.695   Installing the file.
+2026-11-28 11:05:16.695   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\licenses
+2026-11-28 11:05:16.695   Successfully installed the file.
+2026-11-28 11:05:16.695   -- File entry --
+2026-11-28 11:05:16.695   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pythonnet-3.2.1.dist-info\licenses\LICENSE
+2026-11-28 11:05:16.697   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.697   Installing the file.
+2026-11-28 11:05:16.697   Successfully installed the file.
+2026-11-28 11:05:16.697   -- File entry --
+2026-11-28 11:05:16.697   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\entry_points.txt
+2026-11-28 11:05:16.697   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.697   Installing the file.
+2026-11-28 11:05:16.697   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info
+2026-11-28 11:05:16.727   Successfully installed the file.
+2026-11-28 11:05:16.729   -- File entry --
+2026-11-28 11:05:16.729   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\INSTALLER
+2026-11-28 11:05:16.729   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.729   Installing the file.
+2026-11-28 11:05:16.729   Successfully installed the file.
+2026-11-28 11:05:16.729   -- File entry --
+2026-11-28 11:05:16.729   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\METADATA
+2026-11-28 11:05:16.729   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.729   Installing the file.
+2026-11-28 11:05:16.761   Successfully installed the file.
+2026-11-28 11:05:16.761   -- File entry --
+2026-11-28 11:05:16.761   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\RECORD
+2026-11-28 11:05:16.761   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.761   Installing the file.
+2026-11-28 11:05:16.792   Successfully installed the file.
+2026-11-28 11:05:16.792   -- File entry --
+2026-11-28 11:05:16.792   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\REQUESTED
+2026-11-28 11:05:16.792   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.792   Installing the file.
+2026-11-28 11:05:16.794   Successfully installed the file.
+2026-11-28 11:05:16.794   -- File entry --
+2026-11-28 11:05:16.794   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\top_level.txt
+2026-11-28 11:05:16.794   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.794   Installing the file.
+2026-11-28 11:05:16.794   Successfully installed the file.
+2026-11-28 11:05:16.794   -- File entry --
+2026-11-28 11:05:16.794   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\WHEEL
+2026-11-28 11:05:16.794   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.794   Installing the file.
+2026-11-28 11:05:16.794   Successfully installed the file.
+2026-11-28 11:05:16.794   -- File entry --
+2026-11-28 11:05:16.794   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\licenses\LICENSE
+2026-11-28 11:05:16.794   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.794   Installing the file.
+2026-11-28 11:05:16.794   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\pywebview-6.2.1.dist-info\licenses
+2026-11-28 11:05:16.823   Successfully installed the file.
+2026-11-28 11:05:16.825   -- File entry --
+2026-11-28 11:05:16.825   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\INSTALLER
+2026-11-28 11:05:16.825   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.825   Installing the file.
+2026-11-28 11:05:16.825   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools
+2026-11-28 11:05:16.825   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor
+2026-11-28 11:05:16.825   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info
+2026-11-28 11:05:16.855   Successfully installed the file.
+2026-11-28 11:05:16.855   -- File entry --
+2026-11-28 11:05:16.855   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\METADATA
+2026-11-28 11:05:16.855   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.855   Installing the file.
+2026-11-28 11:05:16.855   Successfully installed the file.
+2026-11-28 11:05:16.855   -- File entry --
+2026-11-28 11:05:16.855   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\RECORD
+2026-11-28 11:05:16.857   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.857   Installing the file.
+2026-11-28 11:05:16.888   Successfully installed the file.
+2026-11-28 11:05:16.888   -- File entry --
+2026-11-28 11:05:16.888   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\REQUESTED
+2026-11-28 11:05:16.888   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.888   Installing the file.
+2026-11-28 11:05:16.920   Successfully installed the file.
+2026-11-28 11:05:16.920   -- File entry --
+2026-11-28 11:05:16.920   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\top_level.txt
+2026-11-28 11:05:16.920   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.920   Installing the file.
+2026-11-28 11:05:16.922   Successfully installed the file.
+2026-11-28 11:05:16.922   -- File entry --
+2026-11-28 11:05:16.922   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\WHEEL
+2026-11-28 11:05:16.922   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.922   Installing the file.
+2026-11-28 11:05:16.924   Successfully installed the file.
+2026-11-28 11:05:16.924   -- File entry --
+2026-11-28 11:05:16.924   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\licenses\LICENSE
+2026-11-28 11:05:16.924   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.924   Installing the file.
+2026-11-28 11:05:16.924   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\licenses
+2026-11-28 11:05:16.949   Successfully installed the file.
+2026-11-28 11:05:16.951   -- File entry --
+2026-11-28 11:05:16.951   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+2026-11-28 11:05:16.951   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.951   Installing the file.
+2026-11-28 11:05:16.951   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\jaraco
+2026-11-28 11:05:16.951   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\setuptools\_vendor\jaraco\text
+2026-11-28 11:05:16.951   Successfully installed the file.
+2026-11-28 11:05:16.951   -- File entry --
+2026-11-28 11:05:16.951   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\app.css
+2026-11-28 11:05:16.951   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.951   Installing the file.
+2026-11-28 11:05:16.951   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui
+2026-11-28 11:05:16.981   Successfully installed the file.
+2026-11-28 11:05:16.981   -- File entry --
+2026-11-28 11:05:16.981   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\app.js
+2026-11-28 11:05:16.981   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.981   Installing the file.
+2026-11-28 11:05:16.981   Successfully installed the file.
+2026-11-28 11:05:16.981   -- File entry --
+2026-11-28 11:05:16.981   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\bruecke.js
+2026-11-28 11:05:16.981   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.981   Installing the file.
+2026-11-28 11:05:16.981   Successfully installed the file.
+2026-11-28 11:05:16.983   -- File entry --
+2026-11-28 11:05:16.983   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\index.html
+2026-11-28 11:05:16.983   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:16.983   Installing the file.
+2026-11-28 11:05:17.009   Successfully installed the file.
+2026-11-28 11:05:17.009   -- File entry --
+2026-11-28 11:05:17.009   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\fonts\Inter-Bold.ttf
+2026-11-28 11:05:17.009   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.009   Installing the file.
+2026-11-28 11:05:17.009   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\fonts
+2026-11-28 11:05:17.021   Successfully installed the file.
+2026-11-28 11:05:17.021   -- File entry --
+2026-11-28 11:05:17.021   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\fonts\Inter-Medium.ttf
+2026-11-28 11:05:17.021   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.021   Installing the file.
+2026-11-28 11:05:17.033   Successfully installed the file.
+2026-11-28 11:05:17.033   -- File entry --
+2026-11-28 11:05:17.033   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\fonts\Inter-Regular.ttf
+2026-11-28 11:05:17.033   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.033   Installing the file.
+2026-11-28 11:05:17.078   Successfully installed the file.
+2026-11-28 11:05:17.078   -- File entry --
+2026-11-28 11:05:17.078   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\ui\fonts\Inter-SemiBold.ttf
+2026-11-28 11:05:17.078   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.078   Installing the file.
+2026-11-28 11:05:17.091   Successfully installed the file.
+2026-11-28 11:05:17.091   -- File entry --
+2026-11-28 11:05:17.091   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\errors.py
+2026-11-28 11:05:17.091   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.091   Installing the file.
+2026-11-28 11:05:17.091   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview
+2026-11-28 11:05:17.092   Successfully installed the file.
+2026-11-28 11:05:17.092   -- File entry --
+2026-11-28 11:05:17.092   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\event.py
+2026-11-28 11:05:17.092   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.092   Installing the file.
+2026-11-28 11:05:17.099   Successfully installed the file.
+2026-11-28 11:05:17.099   -- File entry --
+2026-11-28 11:05:17.099   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\guilib.py
+2026-11-28 11:05:17.099   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.099   Installing the file.
+2026-11-28 11:05:17.100   Successfully installed the file.
+2026-11-28 11:05:17.100   -- File entry --
+2026-11-28 11:05:17.100   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\http.py
+2026-11-28 11:05:17.100   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.100   Installing the file.
+2026-11-28 11:05:17.101   Successfully installed the file.
+2026-11-28 11:05:17.101   -- File entry --
+2026-11-28 11:05:17.101   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\localization.py
+2026-11-28 11:05:17.101   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.101   Installing the file.
+2026-11-28 11:05:17.102   Successfully installed the file.
+2026-11-28 11:05:17.102   -- File entry --
+2026-11-28 11:05:17.102   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\menu.py
+2026-11-28 11:05:17.102   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.102   Installing the file.
+2026-11-28 11:05:17.229   Successfully installed the file.
+2026-11-28 11:05:17.229   -- File entry --
+2026-11-28 11:05:17.229   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\models.py
+2026-11-28 11:05:17.229   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.229   Installing the file.
+2026-11-28 11:05:17.229   Successfully installed the file.
+2026-11-28 11:05:17.229   -- File entry --
+2026-11-28 11:05:17.229   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\py.typed
+2026-11-28 11:05:17.229   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.229   Installing the file.
+2026-11-28 11:05:17.231   Successfully installed the file.
+2026-11-28 11:05:17.231   -- File entry --
+2026-11-28 11:05:17.231   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\screen.py
+2026-11-28 11:05:17.231   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.231   Installing the file.
+2026-11-28 11:05:17.231   Successfully installed the file.
+2026-11-28 11:05:17.231   -- File entry --
+2026-11-28 11:05:17.231   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\state.py
+2026-11-28 11:05:17.231   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.231   Installing the file.
+2026-11-28 11:05:17.260   Successfully installed the file.
+2026-11-28 11:05:17.260   -- File entry --
+2026-11-28 11:05:17.260   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\util.py
+2026-11-28 11:05:17.260   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.260   Installing the file.
+2026-11-28 11:05:17.262   Successfully installed the file.
+2026-11-28 11:05:17.262   -- File entry --
+2026-11-28 11:05:17.262   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\window.py
+2026-11-28 11:05:17.262   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.262   Installing the file.
+2026-11-28 11:05:17.262   Successfully installed the file.
+2026-11-28 11:05:17.262   -- File entry --
+2026-11-28 11:05:17.262   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\_version.py
+2026-11-28 11:05:17.264   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.264   Installing the file.
+2026-11-28 11:05:17.264   Successfully installed the file.
+2026-11-28 11:05:17.264   -- File entry --
+2026-11-28 11:05:17.264   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\__init__.py
+2026-11-28 11:05:17.264   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.264   Installing the file.
+2026-11-28 11:05:17.291   Successfully installed the file.
+2026-11-28 11:05:17.291   -- File entry --
+2026-11-28 11:05:17.291   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\classlist.py
+2026-11-28 11:05:17.291   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.291   Installing the file.
+2026-11-28 11:05:17.291   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom
+2026-11-28 11:05:17.292   Successfully installed the file.
+2026-11-28 11:05:17.292   -- File entry --
+2026-11-28 11:05:17.292   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\dom.py
+2026-11-28 11:05:17.292   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.292   Installing the file.
+2026-11-28 11:05:17.292   Successfully installed the file.
+2026-11-28 11:05:17.292   -- File entry --
+2026-11-28 11:05:17.292   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\element.py
+2026-11-28 11:05:17.294   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.294   Installing the file.
+2026-11-28 11:05:17.321   Successfully installed the file.
+2026-11-28 11:05:17.321   -- File entry --
+2026-11-28 11:05:17.321   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\event.py
+2026-11-28 11:05:17.321   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.321   Installing the file.
+2026-11-28 11:05:17.321   Successfully installed the file.
+2026-11-28 11:05:17.321   -- File entry --
+2026-11-28 11:05:17.321   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\propsdict.py
+2026-11-28 11:05:17.321   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.321   Installing the file.
+2026-11-28 11:05:17.355   Successfully installed the file.
+2026-11-28 11:05:17.355   -- File entry --
+2026-11-28 11:05:17.355   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\dom\__init__.py
+2026-11-28 11:05:17.356   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.356   Installing the file.
+2026-11-28 11:05:17.356   Successfully installed the file.
+2026-11-28 11:05:17.356   -- File entry --
+2026-11-28 11:05:17.356   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\api.js
+2026-11-28 11:05:17.356   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.356   Installing the file.
+2026-11-28 11:05:17.356   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js
+2026-11-28 11:05:17.386   Successfully installed the file.
+2026-11-28 11:05:17.386   -- File entry --
+2026-11-28 11:05:17.386   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\customize.js
+2026-11-28 11:05:17.387   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.387   Installing the file.
+2026-11-28 11:05:17.388   Successfully installed the file.
+2026-11-28 11:05:17.388   -- File entry --
+2026-11-28 11:05:17.388   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\finish.js
+2026-11-28 11:05:17.388   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.388   Installing the file.
+2026-11-28 11:05:17.390   Successfully installed the file.
+2026-11-28 11:05:17.390   -- File entry --
+2026-11-28 11:05:17.390   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\state.js
+2026-11-28 11:05:17.390   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.390   Installing the file.
+2026-11-28 11:05:17.414   Successfully installed the file.
+2026-11-28 11:05:17.414   -- File entry --
+2026-11-28 11:05:17.414   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\lib\dom_json.js
+2026-11-28 11:05:17.414   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.414   Installing the file.
+2026-11-28 11:05:17.414   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\lib
+2026-11-28 11:05:17.418   Successfully installed the file.
+2026-11-28 11:05:17.418   -- File entry --
+2026-11-28 11:05:17.418   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\js\lib\polyfill.js
+2026-11-28 11:05:17.418   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.418   Installing the file.
+2026-11-28 11:05:17.420   Successfully installed the file.
+2026-11-28 11:05:17.420   -- File entry --
+2026-11-28 11:05:17.420   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+2026-11-28 11:05:17.420   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.420   Installing the file.
+2026-11-28 11:05:17.422   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib
+2026-11-28 11:05:17.459   Successfully installed the file.
+2026-11-28 11:05:17.459   -- File entry --
+2026-11-28 11:05:17.459   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+2026-11-28 11:05:17.460   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.460   Installing the file.
+2026-11-28 11:05:17.465   Successfully installed the file.
+2026-11-28 11:05:17.465   -- File entry --
+2026-11-28 11:05:17.465   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\pywebview-android.jar
+2026-11-28 11:05:17.465   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.465   Installing the file.
+2026-11-28 11:05:17.479   Successfully installed the file.
+2026-11-28 11:05:17.479   -- File entry --
+2026-11-28 11:05:17.479   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\WebBrowserInterop.x64.dll
+2026-11-28 11:05:17.479   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.479   Installing the file.
+2026-11-28 11:05:17.508   Successfully installed the file.
+2026-11-28 11:05:17.510   -- File entry --
+2026-11-28 11:05:17.510   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\WebBrowserInterop.x86.dll
+2026-11-28 11:05:17.510   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.510   Installing the file.
+2026-11-28 11:05:17.512   Successfully installed the file.
+2026-11-28 11:05:17.512   -- File entry --
+2026-11-28 11:05:17.512   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+2026-11-28 11:05:17.512   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.512   Installing the file.
+2026-11-28 11:05:17.512   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes
+2026-11-28 11:05:17.512   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-arm64
+2026-11-28 11:05:17.512   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-arm64\native
+2026-11-28 11:05:17.545   Successfully installed the file.
+2026-11-28 11:05:17.546   -- File entry --
+2026-11-28 11:05:17.546   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+2026-11-28 11:05:17.547   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.547   Installing the file.
+2026-11-28 11:05:17.547   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x64
+2026-11-28 11:05:17.547   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x64\native
+2026-11-28 11:05:17.574   Successfully installed the file.
+2026-11-28 11:05:17.574   -- File entry --
+2026-11-28 11:05:17.574   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+2026-11-28 11:05:17.576   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.576   Installing the file.
+2026-11-28 11:05:17.576   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x86
+2026-11-28 11:05:17.576   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\lib\runtimes\win-x86\native
+2026-11-28 11:05:17.584   Successfully installed the file.
+2026-11-28 11:05:17.584   -- File entry --
+2026-11-28 11:05:17.584   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\cef.py
+2026-11-28 11:05:17.584   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.584   Installing the file.
+2026-11-28 11:05:17.584   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms
+2026-11-28 11:05:17.600   Successfully installed the file.
+2026-11-28 11:05:17.600   -- File entry --
+2026-11-28 11:05:17.600   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\cocoa.py
+2026-11-28 11:05:17.600   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.600   Installing the file.
+2026-11-28 11:05:17.602   Successfully installed the file.
+2026-11-28 11:05:17.602   -- File entry --
+2026-11-28 11:05:17.602   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\edgechromium.py
+2026-11-28 11:05:17.602   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.602   Installing the file.
+2026-11-28 11:05:17.604   Successfully installed the file.
+2026-11-28 11:05:17.604   -- File entry --
+2026-11-28 11:05:17.604   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\gtk.py
+2026-11-28 11:05:17.604   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.604   Installing the file.
+2026-11-28 11:05:17.640   Successfully installed the file.
+2026-11-28 11:05:17.640   -- File entry --
+2026-11-28 11:05:17.640   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\mshtml.py
+2026-11-28 11:05:17.640   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.640   Installing the file.
+2026-11-28 11:05:17.640   Successfully installed the file.
+2026-11-28 11:05:17.640   -- File entry --
+2026-11-28 11:05:17.640   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\qt.py
+2026-11-28 11:05:17.640   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.640   Installing the file.
+2026-11-28 11:05:17.644   Successfully installed the file.
+2026-11-28 11:05:17.644   -- File entry --
+2026-11-28 11:05:17.644   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\win32.py
+2026-11-28 11:05:17.644   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.644   Installing the file.
+2026-11-28 11:05:17.646   Successfully installed the file.
+2026-11-28 11:05:17.646   -- File entry --
+2026-11-28 11:05:17.646   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\winforms.py
+2026-11-28 11:05:17.646   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.646   Installing the file.
+2026-11-28 11:05:17.667   Successfully installed the file.
+2026-11-28 11:05:17.667   -- File entry --
+2026-11-28 11:05:17.667   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\__init__.py
+2026-11-28 11:05:17.667   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.667   Installing the file.
+2026-11-28 11:05:17.669   Successfully installed the file.
+2026-11-28 11:05:17.670   -- File entry --
+2026-11-28 11:05:17.670   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\app.py
+2026-11-28 11:05:17.670   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.670   Installing the file.
+2026-11-28 11:05:17.670   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android
+2026-11-28 11:05:17.672   Successfully installed the file.
+2026-11-28 11:05:17.672   -- File entry --
+2026-11-28 11:05:17.672   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\base.py
+2026-11-28 11:05:17.672   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.672   Installing the file.
+2026-11-28 11:05:17.691   Successfully installed the file.
+2026-11-28 11:05:17.691   -- File entry --
+2026-11-28 11:05:17.691   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\event.py
+2026-11-28 11:05:17.691   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.691   Installing the file.
+2026-11-28 11:05:17.693   Successfully installed the file.
+2026-11-28 11:05:17.693   -- File entry --
+2026-11-28 11:05:17.693   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\__init__.py
+2026-11-28 11:05:17.693   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.693   Installing the file.
+2026-11-28 11:05:17.695   Successfully installed the file.
+2026-11-28 11:05:17.695   -- File entry --
+2026-11-28 11:05:17.695   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\app.py
+2026-11-28 11:05:17.695   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.695   Installing the file.
+2026-11-28 11:05:17.695   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass
+2026-11-28 11:05:17.719   Successfully installed the file.
+2026-11-28 11:05:17.719   -- File entry --
+2026-11-28 11:05:17.719   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\content.py
+2026-11-28 11:05:17.721   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.721   Installing the file.
+2026-11-28 11:05:17.721   Successfully installed the file.
+2026-11-28 11:05:17.721   -- File entry --
+2026-11-28 11:05:17.721   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\net.py
+2026-11-28 11:05:17.721   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.721   Installing the file.
+2026-11-28 11:05:17.723   Successfully installed the file.
+2026-11-28 11:05:17.723   -- File entry --
+2026-11-28 11:05:17.723   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\os.py
+2026-11-28 11:05:17.723   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.723   Installing the file.
+2026-11-28 11:05:17.723   Successfully installed the file.
+2026-11-28 11:05:17.723   -- File entry --
+2026-11-28 11:05:17.725   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\view.py
+2026-11-28 11:05:17.725   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.725   Installing the file.
+2026-11-28 11:05:17.743   Successfully installed the file.
+2026-11-28 11:05:17.743   -- File entry --
+2026-11-28 11:05:17.743   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\webkit.py
+2026-11-28 11:05:17.743   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.743   Installing the file.
+2026-11-28 11:05:17.773   Successfully installed the file.
+2026-11-28 11:05:17.773   -- File entry --
+2026-11-28 11:05:17.773   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jclass\__init__.py
+2026-11-28 11:05:17.773   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.773   Installing the file.
+2026-11-28 11:05:17.776   Successfully installed the file.
+2026-11-28 11:05:17.776   -- File entry --
+2026-11-28 11:05:17.776   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jinterface\pywebview.py
+2026-11-28 11:05:17.777   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.777   Installing the file.
+2026-11-28 11:05:17.777   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jinterface
+2026-11-28 11:05:17.818   Successfully installed the file.
+2026-11-28 11:05:17.818   -- File entry --
+2026-11-28 11:05:17.818   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jinterface\view.py
+2026-11-28 11:05:17.818   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.818   Installing the file.
+2026-11-28 11:05:17.820   Successfully installed the file.
+2026-11-28 11:05:17.820   -- File entry --
+2026-11-28 11:05:17.820   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jinterface\webkit.py
+2026-11-28 11:05:17.820   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.820   Installing the file.
+2026-11-28 11:05:17.822   Successfully installed the file.
+2026-11-28 11:05:17.822   -- File entry --
+2026-11-28 11:05:17.822   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\platforms\android\jinterface\__init__.py
+2026-11-28 11:05:17.822   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.822   Installing the file.
+2026-11-28 11:05:17.852   Successfully installed the file.
+2026-11-28 11:05:17.852   -- File entry --
+2026-11-28 11:05:17.852   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\__pyinstaller\hook-webview.py
+2026-11-28 11:05:17.852   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.852   Installing the file.
+2026-11-28 11:05:17.852   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\__pyinstaller
+2026-11-28 11:05:17.884   Successfully installed the file.
+2026-11-28 11:05:17.884   -- File entry --
+2026-11-28 11:05:17.884   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\_internal\webview\__pyinstaller\__init__.py
+2026-11-28 11:05:17.884   Time stamp of our file: 2026-11-28 11:04:36.000
+2026-11-28 11:05:17.884   Installing the file.
+2026-11-28 11:05:17.886   Successfully installed the file.
+2026-11-28 11:05:17.886   -- Icon entry --
+2026-11-28 11:05:17.886   Dest filename: C:\Users\runneradmin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Honeys Werkstatt.lnk
+2026-11-28 11:05:17.886   Creating the icon.
+2026-11-28 11:05:17.939   Successfully created the icon.
+2026-11-28 11:05:17.943   -- Registry entry --
+2026-11-28 11:05:17.943   Key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+2026-11-28 11:05:17.943   Value name: HoneysWerkstatt
+2026-11-28 11:05:17.943   Not creating the key or a value, skipping the key and only updating uninstall log.
+2026-11-28 11:05:17.943   Saving uninstall information.
+2026-11-28 11:05:17.943   Creating new uninstall key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{EDD2D7CA-10E7-4F92-8F62-B5F948950037}_is1
+2026-11-28 11:05:17.943   Writing uninstall key values.
+2026-11-28 11:05:17.944   Detected previous administrative 64-bit install? No
+2026-11-28 11:05:17.944   Detected previous administrative 32-bit install? No
+2026-11-28 11:05:17.987   Installation process succeeded.
+2026-11-28 11:05:17.989   Need to restart Windows? No
+2026-11-28 11:05:17.992   -- Run entry --
+2026-11-28 11:05:17.992   Run as: Original user
+2026-11-28 11:05:17.992   Type: Exec
+2026-11-28 11:05:17.992   Filename: C:\Users\runneradmin\AppData\Local\Programs\Honeys Werkstatt\HoneysWerkstatt.exe
+2026-11-28 11:05:18.005   Deinitializing Setup.
+2026-11-28 11:05:18.016   Log closed.
