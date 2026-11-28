@@ -120,6 +120,18 @@
       "beschreibung": "Instagram-Karussells als durchgehende Strecke gestalten"
     },
     {
+      "id": "luftbruecke",
+      "name": "Luftbrücke",
+      "typ": "windows",
+      "repo": "honeybalecta/luftbruecke",
+      "beschreibung": "Aufnahmen von der DJI Osmo Pocket 3 drahtlos auf den PC holen",
+      "windows": {
+        "datei": "^Luftbruecke-Setup-.*\\.exe$",
+        "appid": "{4CC5B8E5-DB25-424E-B7D3-3B18C25D8209}",
+        "exe": "Luftbruecke.exe"
+      }
+    },
+    {
       "id": "werkstatt",
       "name": "Honeys Werkstatt",
       "typ": "apk",
